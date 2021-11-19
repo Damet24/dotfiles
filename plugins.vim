@@ -23,5 +23,6 @@ call plug#begin('~\.\AppData\Local\nvim\plugged')
 
   " languages
   Plug 'sheerun/vim-polyglot'
+  Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 
 call plug#end()
