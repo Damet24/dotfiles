@@ -11,3 +11,5 @@ nmap <Leader>f :Files<CR>
 nmap <Leader>nt :NERDTreeToggle<CR>
 
 nmap <Leader>C :!node %<CR>
+
+nmap <Leader>b :Buffer<CR>
