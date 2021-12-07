@@ -15,5 +15,5 @@ let g:coc_snippet_prev = '<c-h>'
 
  "lightline
 let g:lightline = {
-      \ 'colorscheme': 'darculaOriginal',
+      \ 'colorscheme': 'wombat',
       \ }

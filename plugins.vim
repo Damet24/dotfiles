@@ -6,6 +6,8 @@ call plug#begin('~\.\AppData\Local\nvim\plugged')
   Plug 'doums/darcula'
   Plug 'fcpg/vim-fahrenheit'
   Plug 'tomasiser/vim-code-dark'
+  Plug 'chriskempson/base16-vim'
+  Plug 'daviesjamie/vim-base16-lightline'
 
   " utils
   Plug 'preservim/nerdtree'

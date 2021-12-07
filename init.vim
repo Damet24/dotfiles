@@ -20,11 +20,11 @@ set ruler
 set sw=2
 set clipboard=unnamed
 
-so ~/.nvim/plugins.vim
-so ~/.nvim/plugins-config.vim
-so ~/.nvim/maps.vim
+source %:p\plugins.vim
+source %:p\plugins-config.vim
+source %:p\maps.vim
 
-colorscheme darcula
+colorscheme base16-default-dark
 
 " color settings
 if (empty($TMUX))
