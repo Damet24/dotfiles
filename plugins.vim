@@ -4,10 +4,11 @@ call plug#begin('~\.\AppData\Local\nvim\plugged')
   " color themes
   Plug 'joshdick/onedark.vim'
   Plug 'doums/darcula'
-  Plug 'fcpg/vim-fahrenheit'
   Plug 'tomasiser/vim-code-dark'
   Plug 'chriskempson/base16-vim'
-  Plug 'daviesjamie/vim-base16-lightline'
+  Plug 'navarasu/onedark.nvim'
+
+  Plug 'Sammyalhashe/random_colorscheme.vim'
 
   " utils
   Plug 'preservim/nerdtree'
@@ -20,6 +21,7 @@ call plug#begin('~\.\AppData\Local\nvim\plugged')
   Plug 'Yggdroot/indentLine'
   Plug 'itchyny/lightline.vim'
   Plug 'ryanoasis/vim-devicons'
+
   Plug 'AndrewRadev/tagalong.vim'
   Plug 'christoomey/vim-tmux-navigator'
 

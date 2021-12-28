@@ -14,6 +14,6 @@ let g:tagalong_filetypes = ['html', 'php', 'javascript', 'javascriptreact', 'jsx
 let g:coc_snippet_prev = '<c-h>'
 
  "lightline
-let g:lightline = {
-      \ 'colorscheme': 'wombat',
-      \ }
+"let g:lightline = {
+      "\ 'colorscheme': 'wombat',
+      "\ }

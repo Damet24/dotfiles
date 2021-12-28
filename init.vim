@@ -24,7 +24,7 @@ source ~/.nvim/plugins.vim
 source ~/.nvim/plugins-config.vim
 source ~/.nvim/maps.vim
 
-colorscheme base16-default-dark
+colorscheme codedark
 
 " color settings
 if (empty($TMUX))
@@ -35,3 +35,6 @@ if (empty($TMUX))
     set termguicolors
   endif
 endif
+
+let g:python3_host_prog = 'C:\Users\danie\scoop\apps\python\current'
+let g:loaded_python_provider = 0
