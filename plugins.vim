@@ -1,7 +1,7 @@
 
-let g:coc_global_extensions = ['coc-html', 'coc-tsserver', 'coc-json', 'coc-emmet', 'coc-css', 'coc-eslint']
+let g:coc_global_extensions = ['coc-html', 'coc-tsserver', 'coc-json', 'coc-emmet', 'coc-css', 'coc-eslint', 'coc-phpls']
 
-call plug#begin('~\.\AppData\Local\nvim\plugged')
+call plug#begin('~/.nvim/plugged')
 
   " color themes
   Plug 'sainnhe/gruvbox-material'
