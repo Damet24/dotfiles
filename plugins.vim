@@ -1,14 +1,15 @@
 
+let g:coc_global_extensions = ['coc-html', 'coc-tsserver', 'coc-json', 'coc-emmet', 'coc-css', 'coc-eslint']
+
 call plug#begin('~\.\AppData\Local\nvim\plugged')
 
   " color themes
-  Plug 'joshdick/onedark.vim'
-  Plug 'doums/darcula'
-  Plug 'tomasiser/vim-code-dark'
-  Plug 'chriskempson/base16-vim'
+  Plug 'sainnhe/gruvbox-material'
   Plug 'navarasu/onedark.nvim'
+  Plug 'mhartington/oceanic-next'
 
-  Plug 'Sammyalhashe/random_colorscheme.vim'
+  Plug 'vim-airline/vim-airline'
+  Plug 'vim-airline/vim-airline-themes'
 
   " utils
   Plug 'preservim/nerdtree'
@@ -19,7 +20,6 @@ call plug#begin('~\.\AppData\Local\nvim\plugged')
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
   Plug 'alvan/vim-closetag'
   Plug 'Yggdroot/indentLine'
-  Plug 'itchyny/lightline.vim'
   Plug 'ryanoasis/vim-devicons'
 
   Plug 'AndrewRadev/tagalong.vim'

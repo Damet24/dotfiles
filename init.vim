@@ -9,7 +9,7 @@ set nowritebackup
 set termguicolors
 set laststatus=2
 set shortmess+=c
-set cmdheight=2
+set cmdheight=1
 set cursorline
 set noshowmode
 set nobackup
@@ -24,7 +24,8 @@ source ~/.nvim/plugins.vim
 source ~/.nvim/plugins-config.vim
 source ~/.nvim/maps.vim
 
-colorscheme codedark
+let g:vscode_style = "dark"
+colorscheme gruvbox-material
 
 " color settings
 if (empty($TMUX))

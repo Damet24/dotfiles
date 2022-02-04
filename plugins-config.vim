@@ -13,7 +13,3 @@ let g:tagalong_filetypes = ['html', 'php', 'javascript', 'javascriptreact', 'jsx
 " Use <C-k> for jump to previous placeholder, it's default of coc.nvim
 let g:coc_snippet_prev = '<c-h>'
 
- "lightline
-"let g:lightline = {
-      "\ 'colorscheme': 'wombat',
-      "\ }
