@@ -1,6 +1,4 @@
 
-let g:coc_global_extensions = ['coc-html', 'coc-tsserver', 'coc-json', 'coc-emmet', 'coc-css', 'coc-eslint', 'coc-phpls']
-
 call plug#begin('~/.nvim/plugged')
 
   " color themes
