@@ -1,10 +1,9 @@
 filetype plugin indent on
 syntax on
-set foldmethod=syntax
+"set foldmethod=syntax
 set clipboard=unnamed
 set updatetime=300
 set encoding=UTF-8
-set relativenumber
 set nowritebackup
 set termguicolors
 set laststatus=2
@@ -25,6 +24,7 @@ source ~/.nvim/plugins-config.vim
 source ~/.nvim/maps.vim
 
 let g:vscode_style = "dark"
+
 colorscheme gruvbox-material
 
 " color settings

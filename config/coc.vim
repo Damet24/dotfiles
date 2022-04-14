@@ -1,5 +1,5 @@
 
-# coc plugins
+" coc plugins
 let g:coc_global_extensions = ['coc-html', 'coc-tsserver', 'coc-json', 'coc-emmet', 'coc-css', 'coc-eslint', 'coc-phpls']
 
 " Always show the signcolumn, otherwise it would shift the text each time

@@ -17,4 +17,3 @@ nmap <Leader>C :!node %<CR>
 nnoremap <A-j> :m .+1<CR>==
 nnoremap <A-k> :m .-2<CR>==
 
-nnoremap <Leader>d :t.<CR>

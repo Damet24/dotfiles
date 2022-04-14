@@ -3,8 +3,7 @@ call plug#begin('~/.nvim/plugged')
 
   " color themes
   Plug 'sainnhe/gruvbox-material'
-  Plug 'navarasu/onedark.nvim'
-  Plug 'mhartington/oceanic-next'
+  Plug 'ghifarit53/tokyonight-vim'
 
   Plug 'vim-airline/vim-airline'
   Plug 'vim-airline/vim-airline-themes'
@@ -19,6 +18,7 @@ call plug#begin('~/.nvim/plugged')
   Plug 'alvan/vim-closetag'
   Plug 'Yggdroot/indentLine'
   Plug 'ryanoasis/vim-devicons'
+  Plug 'nikvdp/ejs-syntax'
 
   Plug 'AndrewRadev/tagalong.vim'
   Plug 'christoomey/vim-tmux-navigator'
