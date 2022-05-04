@@ -1,6 +1,7 @@
 
 so ~/.nvim/config/coc.vim
 so ~/.nvim/config/nerdtree.vim
+so ~/.nvim/config/utilsnips.vim
 
 " closetag react and php
 let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.php, *.jsx, *.js, *.ejs"
@@ -13,3 +14,5 @@ let g:tagalong_filetypes = ['html', 'php', 'javascript', 'javascriptreact', 'jsx
 " Use <C-k> for jump to previous placeholder, it's default of coc.nvim
 let g:coc_snippet_prev = '<c-h>'
 
+" Airline themes
+let g:airline_theme='base16_gruvbox_dark_hard'

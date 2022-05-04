@@ -3,6 +3,8 @@ call plug#begin('~/.nvim/plugged')
 
   " color themes
   Plug 'sainnhe/gruvbox-material'
+  Plug 'morhetz/gruvbox'
+  Plug 'lifepillar/vim-gruvbox8'
   Plug 'ghifarit53/tokyonight-vim'
 
   Plug 'vim-airline/vim-airline'
