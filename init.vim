@@ -23,8 +23,12 @@ source ~/.nvim/plugins-config.vim
 source ~/.nvim/maps.vim
 
 
+let g:gruvbox_contrast_dark = 'hard'
 set background=dark
 colorscheme codedark
+"colorscheme gruvbox
+"colorscheme gruvbox8_hard
+"colorscheme onedark
 highlight Normial ctermbg=NONE
 
 " color settings
