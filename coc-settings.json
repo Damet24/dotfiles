@@ -1,0 +1,6 @@
+{
+	"eslint.format.enable": true,
+	"eslint.autoFixOnSave": true,
+  //"coc.preferences.jumpCommand": "tabe",
+  "svelte.enable-ts-plugin": true
+}
