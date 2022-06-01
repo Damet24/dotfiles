@@ -7,7 +7,7 @@ set nowritebackup
 set laststatus=2
 set shortmess+=c
 set cmdheight=1
-"set cursorline
+set cursorline
 set noshowmode
 set nobackup
 set mouse=a
@@ -16,6 +16,7 @@ set nolist
 set number
 set ruler
 set sw=2
+set relativenumber
 
 source ~/.nvim/config/statusline.vim
 source ~/.nvim/plugins.vim

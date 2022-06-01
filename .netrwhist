@@ -1,3 +1,12 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =1
+let g:netrw_dirhistcnt =0
+let g:netrw_dirhist_0='/home/damet/.config/nvim/plugged'
+let g:netrw_dirhist_9='/home/damet/.config/nvim/plugged/nvim-tree.lua'
+let g:netrw_dirhist_8='/home/damet/.config/nvim/plugged/nvim-tree.lua/doc'
+let g:netrw_dirhist_7='/home/damet/.config/nvim/plugged/nvim-tree.lua'
+let g:netrw_dirhist_6='/home/damet/.config/nvim/plugged/nvim-tree.lua/lua'
+let g:netrw_dirhist_5='/home/damet/.config/nvim/plugged/nvim-tree.lua'
+let g:netrw_dirhist_4='/home/damet/.config/nvim/plugged'
+let g:netrw_dirhist_3='/home/damet/.config/nvim'
+let g:netrw_dirhist_2='/home/damet/.config/nvim/config'
 let g:netrw_dirhist_1='/home/damet/.config/nvim'

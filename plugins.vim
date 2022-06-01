@@ -10,6 +10,8 @@ call plug#begin('~/.nvim/plugged')
 
   " utils
   Plug 'preservim/nerdtree'
+  "Plug 'ms-jpq/chadtree', {'branch': 'chad', 'do': 'python3 -m chadtree deps'}
+
   Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
   Plug 'junegunn/fzf.vim'
   Plug 'preservim/nerdcommenter'
