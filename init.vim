@@ -1,6 +1,6 @@
 filetype plugin indent on
 syntax on
-set clipboard=unnamed
+set clipboard=unnamedplus
 set updatetime=300
 set encoding=UTF-8
 set nowritebackup
@@ -16,16 +16,19 @@ set nolist
 set number
 set ruler
 set sw=2
+set relativenumber
 
+"source ~/.nvim/config/statusline.vim
 source ~/.nvim/plugins.vim
 source ~/.nvim/plugins-config.vim
 source ~/.nvim/maps.vim
 
 set background=dark
-colorscheme gruvbox8_hard
-highlight Normial ctermbg=NONE
+" Vim Script
+"let g:catppuccin_flavour = "mocha" " latte, frappe, macchiato, mocha
+colorscheme afterglow
 
-" color settings
+ "color settings
 if (empty($TMUX))
   if (has("nvim"))
     let $NVIM_TUI_ENABLE_TRUE_COLOR=1
@@ -35,6 +38,4 @@ if (empty($TMUX))
   endif
 endif
 
-let g:loaded_python_provider=0
-let g:python3_host_prog = 'C:\Users\danie\scoop\apps\python\current\python.exe'
-let g:loaded_python_provider = 0
+hi Normal guibg=NONE ctermbg=none

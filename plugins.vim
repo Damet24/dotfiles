@@ -2,13 +2,16 @@
 call plug#begin('~/.nvim/plugged')
 
   " color themes
-  Plug 'sainnhe/gruvbox-material'
-  Plug 'morhetz/gruvbox'
-  Plug 'lifepillar/vim-gruvbox8'
-  Plug 'ghifarit53/tokyonight-vim'
+  "Plug 'sainnhe/gruvbox-material'
+  "Plug 'morhetz/gruvbox'
+  "Plug 'lifepillar/vim-gruvbox8'
+  "Plug 'ghifarit53/tokyonight-vim'
+  "Plug 'catppuccin/nvim', {'as': 'catppuccin'}
+  Plug 'danilo-augusto/vim-afterglow'
+  Plug 'martinsione/darkplus.nvim'
 
-  Plug 'vim-airline/vim-airline'
-  Plug 'vim-airline/vim-airline-themes'
+  "Plug 'vim-airline/vim-airline'
+  "Plug 'vim-airline/vim-airline-themes'
 
   " utils
   Plug 'preservim/nerdtree'

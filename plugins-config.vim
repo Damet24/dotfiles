@@ -15,4 +15,8 @@ let g:tagalong_filetypes = ['html', 'php', 'javascript', 'javascriptreact', 'jsx
 let g:coc_snippet_prev = '<c-h>'
 
 " Airline themes
-let g:airline_theme='base16_gruvbox_dark_hard'
+let g:airline_theme='monochrome'
+
+
+" indentLine
+let g:indentLine_char_list = '|'
