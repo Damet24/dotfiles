@@ -1,0 +1,10 @@
+
+require('settings')
+require('mappings')
+-- require('theme-config.vscode')
+require('theme-config.github')
+require('plugins')
+require('settings.tree')
+require('settings.lualine')
+require('settings.lsp')
+require('settings.lspinstall')
