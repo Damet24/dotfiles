@@ -16,7 +16,6 @@ set nolist
 set number
 set ruler
 set sw=2
-set relativenumber
 
 source ~/.nvim/config/statusline.vim
 source ~/.nvim/plugins.vim
