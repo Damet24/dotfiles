@@ -18,7 +18,7 @@ set ruler
 set sw=2
 set relativenumber
 
-"source ~/.nvim/config/statusline.vim
+source ~/.nvim/config/statusline.vim
 source ~/.nvim/plugins.vim
 source ~/.nvim/plugins-config.vim
 source ~/.nvim/maps.vim
@@ -26,7 +26,7 @@ source ~/.nvim/maps.vim
 set background=dark
 " Vim Script
 "let g:catppuccin_flavour = "mocha" " latte, frappe, macchiato, mocha
-colorscheme afterglow
+colorscheme github_dark_default
 
  "color settings
 if (empty($TMUX))
@@ -38,4 +38,3 @@ if (empty($TMUX))
   endif
 endif
 
-hi Normal guibg=NONE ctermbg=none

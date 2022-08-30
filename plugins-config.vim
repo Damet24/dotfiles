@@ -1,7 +1,7 @@
 
 so ~/.nvim/config/coc.vim
 so ~/.nvim/config/nerdtree.vim
-so ~/.nvim/config/utilsnips.vim
+" so ~/.nvim/config/utilsnips.vim
 
 " closetag react and php
 let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.php, *.jsx, *.js, *.ejs"
@@ -20,3 +20,12 @@ let g:airline_theme='monochrome'
 
 " indentLine
 let g:indentLine_char_list = '|'
+
+lua <<EOF
+require'nvim-treesitter.configs'.setup {
+  -- ensure_installed = "maintained", -- one of "all", "maintained" (parsers with maintainers), or a list of languages
+  highlight = {
+    enable = true,              -- false will disable the whole extension
+  },
+}
+EOF

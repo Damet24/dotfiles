@@ -1,17 +1,9 @@
 
-call plug#begin('~/.nvim/plugged')
+call plug#begin('~/.nvi/plugged')
 
-  " color themes
-  "Plug 'sainnhe/gruvbox-material'
-  "Plug 'morhetz/gruvbox'
-  "Plug 'lifepillar/vim-gruvbox8'
-  "Plug 'ghifarit53/tokyonight-vim'
-  "Plug 'catppuccin/nvim', {'as': 'catppuccin'}
+  Plug 'projekt0n/github-nvim-theme'
   Plug 'danilo-augusto/vim-afterglow'
-  Plug 'martinsione/darkplus.nvim'
-
-  "Plug 'vim-airline/vim-airline'
-  "Plug 'vim-airline/vim-airline-themes'
+  Plug 'Mofiqul/vscode.nvim'
 
   " utils
   Plug 'preservim/nerdtree'
@@ -29,6 +21,7 @@ call plug#begin('~/.nvim/plugged')
   Plug 'christoomey/vim-tmux-navigator'
 
   " languages
+  Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
   Plug 'sheerun/vim-polyglot'
   Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 

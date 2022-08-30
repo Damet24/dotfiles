@@ -6,6 +6,9 @@ nmap <Leader>q :q<CR>
 nmap <Leader>Q :q!<CR>
 nmap <Leader>x :x<CR>
 
+noremap <Leader>th :botright new <Bar> :terminal<CR>
+noremap <Leader>tv :botright vnew <Bar> :terminal<CR>
+
 nmap <Leader>f :Files<CR>
 nmap <Leader>b :Buffer<CR>
 nmap <Leader>l :Lines<CR>
