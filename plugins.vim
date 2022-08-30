@@ -20,6 +20,8 @@ call plug#begin('~/.nvi/plugged')
   Plug 'AndrewRadev/tagalong.vim'
   Plug 'christoomey/vim-tmux-navigator'
 
+  Plug 'voldikss/vim-floaterm'
+
   " languages
   Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
   Plug 'sheerun/vim-polyglot'
