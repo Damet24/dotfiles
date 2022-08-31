@@ -1,10 +1,9 @@
 
 require('settings')
-require('mappings')
--- require('theme-config.vscode')
-require('theme-config.github')
-require('plugins')
-require('settings.tree')
-require('settings.lualine')
-require('settings.lsp')
-require('settings.lspinstall')
+require('mapping')
+require('colorscheme-config.github')
+require('packer-config')
+require('nvim-tree-config')
+require('lualine-config')
+require('treesitter')
+

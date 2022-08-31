@@ -9,6 +9,7 @@ require('lualine').setup {
       statusline = {},
       winbar = {},
     },
+    ignore_focus = {},
     always_divide_middle = true,
     globalstatus = false,
     refresh = {
