@@ -16,8 +16,10 @@ return require'packer'.startup(function()
   use {'neoclide/coc.nvim', branch = 'release'}
 
   use {
-        'nvim-treesitter/nvim-treesitter',
-        run = ':TSUpdate'
-    }
+    'nvim-treesitter/nvim-treesitter',
+    run = ':TSUpdate'
+  }
+
+  use "lukas-reineke/indent-blankline.nvim"
 
 end)

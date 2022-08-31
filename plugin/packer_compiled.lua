@@ -79,6 +79,11 @@ _G.packer_plugins = {
     path = "/home/damet/.local/share/nvim/site/pack/packer/start/github-nvim-theme",
     url = "https://github.com/projekt0n/github-nvim-theme"
   },
+  ["indent-blankline.nvim"] = {
+    loaded = true,
+    path = "/home/damet/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
+    url = "https://github.com/lukas-reineke/indent-blankline.nvim"
+  },
   ["lualine.nvim"] = {
     loaded = true,
     path = "/home/damet/.local/share/nvim/site/pack/packer/start/lualine.nvim",

@@ -7,4 +7,5 @@ require('nvim-tree-config')
 require('lualine-config')
 require('treesitter')
 require('coc-config')
+require('indent')
 
