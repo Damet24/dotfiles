@@ -22,8 +22,9 @@ let g:airline_theme='monochrome'
 let g:indentLine_char_list = '|'
 
 lua <<EOF
+require'nvim-treesitter.install'.compilers = {"musl-gcc"}
+require'nvim-treesitter.parsers'.command_extra_args = {["musl-gcc"] = {"-static"}}
 require'nvim-treesitter.configs'.setup {
-  -- ensure_installed = "maintained", -- one of "all", "maintained" (parsers with maintainers), or a list of languages
   highlight = {
     enable = true,              -- false will disable the whole extension
   },
