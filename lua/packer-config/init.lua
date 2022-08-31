@@ -22,4 +22,11 @@ return require'packer'.startup(function()
 
   use "lukas-reineke/indent-blankline.nvim"
 
+  use { 'ibhagwan/fzf-lua',
+  -- optional for icon support
+  requires = { 'kyazdani42/nvim-web-devicons' }
+}
+
+use "terrortylor/nvim-comment"
+
 end)

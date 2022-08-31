@@ -9,3 +9,6 @@ require('treesitter')
 require('coc-config')
 require('indent')
 
+
+require('nvim_comment').setup()
+

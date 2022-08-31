@@ -10,3 +10,6 @@ map('n', '<Leader>Q', ':q!<CR>', opts)
 
 map('n', '<Leader>nt', ':NvimTreeToggle<CR>', opts)
 map('n', '<Leader>E', ':NvimTreeFocus<CR>', opts)
+
+map('n', '<Leader>F', ':FzfLua files<CR>', opts)
+map('n', '<Leader>L', ':FzfLua lines<CR>', opts)

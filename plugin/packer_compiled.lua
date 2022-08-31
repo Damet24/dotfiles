@@ -74,6 +74,11 @@ _G.packer_plugins = {
     path = "/home/damet/.local/share/nvim/site/pack/packer/start/coc.nvim",
     url = "https://github.com/neoclide/coc.nvim"
   },
+  ["fzf-lua"] = {
+    loaded = true,
+    path = "/home/damet/.local/share/nvim/site/pack/packer/start/fzf-lua",
+    url = "https://github.com/ibhagwan/fzf-lua"
+  },
   ["github-nvim-theme"] = {
     loaded = true,
     path = "/home/damet/.local/share/nvim/site/pack/packer/start/github-nvim-theme",
@@ -88,6 +93,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/damet/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
+  },
+  ["nvim-comment"] = {
+    loaded = true,
+    path = "/home/damet/.local/share/nvim/site/pack/packer/start/nvim-comment",
+    url = "https://github.com/terrortylor/nvim-comment"
   },
   ["nvim-tree.lua"] = {
     loaded = true,
