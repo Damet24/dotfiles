@@ -6,9 +6,8 @@ require('packer-config')
 require('nvim-tree-config')
 require('lualine-config')
 require('treesitter')
-require('coc-config')
 require('indent')
-
-
-require('nvim_comment').setup()
-
+require('nvim-comment')
+require('autopairs')
+require('lsp-config')
+require('lsp-config.cmp')
