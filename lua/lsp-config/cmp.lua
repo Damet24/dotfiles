@@ -108,3 +108,7 @@ require('lspconfig')['emmet_ls'].setup {
 require('lspconfig')['jsonls'].setup {
   capabilities = capabilities
 }
+
+require('lspconfig')['intelephense'].setup {
+  capabilities = capabilities
+}

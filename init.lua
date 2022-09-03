@@ -11,3 +11,5 @@ require('nvim-comment')
 require('autopairs')
 require('lsp-config')
 require('lsp-config.cmp')
+
+require("luasnip.loaders.from_snipmate").load()

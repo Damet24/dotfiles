@@ -1,6 +1,7 @@
 
 local set = vim.opt
 
+set.syntax = 'off'
 set.expandtab = true
 set.smarttab = true
 set.shiftwidth = 2

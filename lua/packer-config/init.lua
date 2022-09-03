@@ -10,8 +10,6 @@ return require'packer'.startup(function()
     use { 'kyazdani42/nvim-tree.lua' }
     use { 'nvim-lualine/lualine.nvim', requires = { 'kyazdani42/nvim-web-devicons', opt = true } }
 
-    -- use {'neoclide/coc.nvim', branch = 'release'}
-
     use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
 
     use "lukas-reineke/indent-blankline.nvim"
@@ -36,5 +34,4 @@ return require'packer'.startup(function()
     use 'hrsh7th/nvim-cmp'
     use 'L3MON4D3/LuaSnip'
     use 'saadparwaiz1/cmp_luasnip'
-
 end)
