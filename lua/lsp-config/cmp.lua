@@ -112,3 +112,12 @@ require('lspconfig')['jsonls'].setup {
 require('lspconfig')['intelephense'].setup {
   capabilities = capabilities
 }
+
+require('lspconfig')['tailwindcss'].setup {
+  capabilities = capabilities
+}
+
+require('lspconfig')['yamlls'].setup {
+  capabilities = capabilities
+}
+

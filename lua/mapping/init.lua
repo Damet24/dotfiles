@@ -14,8 +14,11 @@ map('n', '<Leader>E', ':NvimTreeFocus<CR>', opts)
 map('n', '<Leader>F', ':FzfLua files<CR>', opts)
 map('n', '<Leader>L', ':FzfLua lines<CR>', opts)
 
-
 map('n', '<left>', ':wincmd h<CR>', opts)
 map('n', '<right>', ':wincmd l<CR>', opts)
 map('n', '<up>', ':wincmd k<CR>', opts)
 map('n', '<down>', ':wincmd j<CR>', opts)
+
+map('n', '<Leader>C', ':!node %<CR>', opts)
+
+map('n', '<Leader>tt', ':FloatermToggle<CR>', opts)

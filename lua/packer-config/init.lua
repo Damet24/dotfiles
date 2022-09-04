@@ -4,6 +4,7 @@ return require'packer'.startup(function()
 
     -- theme
     use ({ 'projekt0n/github-nvim-theme' })
+    use 'adrian5/oceanic-next-vim'
 
     -- utils
     use { 'kyazdani42/nvim-web-devicons' }
@@ -34,4 +35,6 @@ return require'packer'.startup(function()
     use 'hrsh7th/nvim-cmp'
     use 'L3MON4D3/LuaSnip'
     use 'saadparwaiz1/cmp_luasnip'
+    
+    use 'windwp/nvim-ts-autotag'
 end)
