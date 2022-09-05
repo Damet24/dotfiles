@@ -184,6 +184,16 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/damet/.local/share/nvim/site/pack/packer/start/vim-floaterm",
     url = "https://github.com/voldikss/vim-floaterm"
+  },
+  ["vim-moonfly-colors"] = {
+    loaded = true,
+    path = "/home/damet/.local/share/nvim/site/pack/packer/start/vim-moonfly-colors",
+    url = "https://github.com/bluz71/vim-moonfly-colors"
+  },
+  ["vscode.nvim"] = {
+    loaded = true,
+    path = "/home/damet/.local/share/nvim/site/pack/packer/start/vscode.nvim",
+    url = "https://github.com/Mofiqul/vscode.nvim"
   }
 }
 

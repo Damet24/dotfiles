@@ -5,6 +5,8 @@ return require'packer'.startup(function()
     -- theme
     use ({ 'projekt0n/github-nvim-theme' })
     use 'adrian5/oceanic-next-vim'
+    use 'bluz71/vim-moonfly-colors'
+    use 'Mofiqul/vscode.nvim'
 
     -- utils
     use { 'kyazdani42/nvim-web-devicons' }

@@ -1,7 +1,7 @@
 
 require('settings')
 require('mapping')
-require('colorscheme-config.oceanic')
+require('colorscheme-config.moonfly_')
 require('packer-config')
 require('nvim-tree-config')
 require('lualine-config')
