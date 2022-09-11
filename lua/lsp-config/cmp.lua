@@ -121,3 +121,7 @@ require('lspconfig')['yamlls'].setup {
   capabilities = capabilities
 }
 
+-- pyright
+require('lspconfig')['pyright'].setup {
+  capabilities = capabilities
+}

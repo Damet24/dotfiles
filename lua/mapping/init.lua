@@ -23,3 +23,6 @@ map('n', '<down>', ':wincmd j<CR>', opts)
 map('n', '<Leader>C', ':!node %<CR>', opts)
 
 map('n', '<Leader>tt', ':FloatermToggle<CR>', opts)
+
+map('n', '<A-j>', ':m .+1<CR>', opts)
+map('n', '<A-k>', ':m .-2<CR>', opts)

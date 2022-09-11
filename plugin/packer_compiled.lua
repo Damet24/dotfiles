@@ -114,6 +114,11 @@ _G.packer_plugins = {
     path = "/home/damet/.local/share/nvim/site/pack/packer/start/github-nvim-theme",
     url = "https://github.com/projekt0n/github-nvim-theme"
   },
+  gruvbox = {
+    loaded = true,
+    path = "/home/damet/.local/share/nvim/site/pack/packer/start/gruvbox",
+    url = "https://github.com/morhetz/gruvbox"
+  },
   ["indent-blankline.nvim"] = {
     loaded = true,
     path = "/home/damet/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
@@ -184,11 +189,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/damet/.local/share/nvim/site/pack/packer/start/vim-floaterm",
     url = "https://github.com/voldikss/vim-floaterm"
-  },
-  ["vim-moonfly-colors"] = {
-    loaded = true,
-    path = "/home/damet/.local/share/nvim/site/pack/packer/start/vim-moonfly-colors",
-    url = "https://github.com/bluz71/vim-moonfly-colors"
   },
   ["vscode.nvim"] = {
     loaded = true,
