@@ -6,6 +6,7 @@ return require 'packer'.startup(function()
   use 'adrian5/oceanic-next-vim'
   use 'Mofiqul/vscode.nvim'
   use 'morhetz/gruvbox'
+  use 'navarasu/onedark.nvim'
 
   -- utils
   use { 'kyazdani42/nvim-web-devicons' }

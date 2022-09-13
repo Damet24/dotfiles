@@ -180,6 +180,11 @@ _G.packer_plugins = {
     path = "/home/damet/.local/share/nvim/site/pack/packer/start/oceanic-next-vim",
     url = "https://github.com/adrian5/oceanic-next-vim"
   },
+  ["onedark.nvim"] = {
+    loaded = true,
+    path = "/home/damet/.local/share/nvim/site/pack/packer/start/onedark.nvim",
+    url = "https://github.com/navarasu/onedark.nvim"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/home/damet/.local/share/nvim/site/pack/packer/start/packer.nvim",
