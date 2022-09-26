@@ -125,3 +125,8 @@ require('lspconfig')['yamlls'].setup {
 require('lspconfig')['pyright'].setup {
   capabilities = capabilities
 }
+
+-- astro
+require('lspconfig')['astro'].setup {
+  capabilities = capabilities
+}

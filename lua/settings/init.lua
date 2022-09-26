@@ -4,9 +4,14 @@ local set = vim.opt
 set.syntax = 'off'
 set.expandtab = true
 set.smarttab = true
+
+
 set.shiftwidth = 2
 set.tabstop = 2
+vim.cmd 'autocmd Filetype php setlocal tabstop=4 shiftwidth=4 softtabstop=4'
+
 set.number = true
+set.relativenumber = true
 
 set.hlsearch = true
 set.incsearch = true

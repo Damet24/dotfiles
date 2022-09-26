@@ -1,9 +1,9 @@
-
 require('lualine').setup {
   options = {
     -- theme = bubbles_theme,
     component_separators = '',
     section_separators = { left = '', right = '' },
+    theme = 'vscode',
   },
   sections = {
     lualine_a = {

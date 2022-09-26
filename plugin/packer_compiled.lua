@@ -109,11 +109,6 @@ _G.packer_plugins = {
     path = "/home/damet/.local/share/nvim/site/pack/packer/start/fzf-lua",
     url = "https://github.com/ibhagwan/fzf-lua"
   },
-  ["github-nvim-theme"] = {
-    loaded = true,
-    path = "/home/damet/.local/share/nvim/site/pack/packer/start/github-nvim-theme",
-    url = "https://github.com/projekt0n/github-nvim-theme"
-  },
   gruvbox = {
     loaded = true,
     path = "/home/damet/.local/share/nvim/site/pack/packer/start/gruvbox",
@@ -175,11 +170,6 @@ _G.packer_plugins = {
     path = "/home/damet/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/kyazdani42/nvim-web-devicons"
   },
-  ["oceanic-next-vim"] = {
-    loaded = true,
-    path = "/home/damet/.local/share/nvim/site/pack/packer/start/oceanic-next-vim",
-    url = "https://github.com/adrian5/oceanic-next-vim"
-  },
   ["onedark.nvim"] = {
     loaded = true,
     path = "/home/damet/.local/share/nvim/site/pack/packer/start/onedark.nvim",
@@ -190,15 +180,20 @@ _G.packer_plugins = {
     path = "/home/damet/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
   },
+  ["tokyonight.nvim"] = {
+    loaded = true,
+    path = "/home/damet/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
+    url = "https://github.com/folke/tokyonight.nvim"
+  },
   ["vim-floaterm"] = {
     loaded = true,
     path = "/home/damet/.local/share/nvim/site/pack/packer/start/vim-floaterm",
     url = "https://github.com/voldikss/vim-floaterm"
   },
-  ["vscode.nvim"] = {
+  ["vim-monokai-tasty"] = {
     loaded = true,
-    path = "/home/damet/.local/share/nvim/site/pack/packer/start/vscode.nvim",
-    url = "https://github.com/Mofiqul/vscode.nvim"
+    path = "/home/damet/.local/share/nvim/site/pack/packer/start/vim-monokai-tasty",
+    url = "https://github.com/patstockwell/vim-monokai-tasty"
   }
 }
 
