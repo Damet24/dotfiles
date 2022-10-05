@@ -26,4 +26,4 @@ Plugins
 - **[zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)**
 - **[zsh-sudo](https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/sudo/sudo.plugin.zsh)**
 ### screenshot
-![scroonshot](./screenshots/image_2.png)
+![scroonshot](./screenshots/zsh-screeshot.png)
