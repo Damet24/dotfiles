@@ -15,9 +15,9 @@ Plugins manager [packer.nvim](https://github.com/wbthomason/packer.nvim#features
 
 ### screenshot
 
-![scroonshot](./screenshot/Screenshot_2022-09-01_21-56-57.png)
-![scroonshot](./screenshot/Screenshot_2022-09-01_21-57-34.png)
-![scroonshot](./screenshot/Screenshot_2022-09-01_21-58-04.png)
+![scroonshot](./screenshots/Screenshot_2022-09-01_21-56-57.png)
+![scroonshot](./screenshots/Screenshot_2022-09-01_21-57-34.png)
+![scroonshot](./screenshots/Screenshot_2022-09-01_21-58-04.png)
 
 ## Zsh Config
 Promp [Starship](https://starship.rs/)
@@ -26,4 +26,4 @@ Plugins
 - **[zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)**
 - **[zsh-sudo](https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/sudo/sudo.plugin.zsh)**
 ### screenshot
-![scroonshot](./screenshot/image_2.png)
+![scroonshot](./screenshots/image_2.png)
