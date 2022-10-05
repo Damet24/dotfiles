@@ -1,5 +1,9 @@
 
-<h1 align="center">Material Bread</h1>
+<h1 align="center">My DotFiles Config</h1>
+
+# Genal
+- 
+
 
 ## My neovim config
 
