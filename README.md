@@ -1,4 +1,5 @@
-<head>My dotfiles configurations</head>
+
+<h1 align="center">Material Bread</h1>
 
 ## My neovim config
 
