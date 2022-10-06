@@ -3,6 +3,7 @@ return require 'packer'.startup(function()
 
   -- theme
   use 'morhetz/gruvbox'
+  use 'https://github.com/bluz71/vim-moonfly-colors'
   use 'navarasu/onedark.nvim'
   use 'folke/tokyonight.nvim'
   use 'patstockwell/vim-monokai-tasty'
