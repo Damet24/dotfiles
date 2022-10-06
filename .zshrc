@@ -42,8 +42,8 @@ alias gb='git branch'
 alias gck='git checkout'
 alias gc='git commit'
 
-source /usr/share/zsh-plugins/sudo.plugin.zsh
-source /usr/share/zsh-plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh
-source /usr/share/zsh-plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh
+source /usr/share/zsh-sudo/sudo.plugin.zsh
+source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
