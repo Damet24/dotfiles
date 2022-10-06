@@ -1,3 +1,4 @@
-plugged/
+neovim/plugged/
+neovim/plugin/
 autoload/
 .luarc.json
