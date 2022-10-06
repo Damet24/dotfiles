@@ -18,7 +18,7 @@ map('n', '<Leader>D', vim.lsp.buf.type_definition, opts)
 map('n', '<Leader>rn', vim.lsp.buf.rename, opts)
 map('n', '<Leader>ca', vim.lsp.buf.code_action, opts)
 map('n', 'gr', vim.lsp.buf.references, opts)
-map('n', '<Leader>f', vim.lsp.buf.formatting, opts)
+map('n', '<Leader>f', vim.lsp.buf.format, opts)
 
 vim.cmd 'set foldmethod=expr'
 vim.cmd 'set foldexpr=nvim_treesitter#foldexpr()'
