@@ -6,28 +6,37 @@ local theme_assets = require("beautiful.theme_assets")
 local xresources = require("beautiful.xresources")
 local dpi = xresources.apply_dpi
 
+local gears = require("gears")
 local gfs = require("gears.filesystem")
-local themes_path = gfs.get_themes_dir()
+local themes_path = "/home/damet/dotfiles/awesome"
 
 local theme = {}
 
 theme.font          = "Hack NF"
 
-theme.bg_normal     = "#222222"
-theme.bg_focus      = "#535d6c"
-theme.bg_urgent     = "#ff0000"
+color_dark = "#424153"
+color_primary = "#663399"
+color_white = "#eeeeee"
+color_secundary = "#A62F9C"
+color_orange = "#e47a13"
+color_transparent = "#000000a"
+color3 = "#535d6c"
+
+theme.bg_normal     = color_dark
+theme.bg_focus      = color_primary
+theme.bg_urgent     = "#A62F9C"
 theme.bg_minimize   = "#444444"
 theme.bg_systray    = theme.bg_normal
 
-theme.fg_normal     = "#aaaaaa"
-theme.fg_focus      = "#ffffff"
-theme.fg_urgent     = "#ffffff"
-theme.fg_minimize   = "#ffffff"
+theme.fg_normal     = color_white
+theme.fg_focus      = color_white
+theme.fg_urgent     = color_white
+theme.fg_minimize   = color_white
 
 theme.useless_gap   = dpi(20)
-theme.border_width  = dpi(1)
-theme.border_normal = "#000000"
-theme.border_focus  = "#535d6c"
+theme.border_width  = dpi(4)
+theme.border_normal = "#424153"
+theme.border_focus  = "#9332B0"
 theme.border_marked = "#91231c"
 
 -- There are other variable sets
@@ -53,17 +62,36 @@ theme.taglist_squares_unsel = theme_assets.taglist_squares_unsel(
 )
 
 -- Variables set for theming notifications:
--- notification_font
--- notification_[bg|fg]
+theme.notification_font = "DaddyTimeMono NF"
+theme.notification_bg = color_dark
+theme.notification_fg = color_white
+theme.notification_max_height = 100
+theme.notification_height = 100
+theme.notification_margin = 200
+theme.notification_opacity = 0.95
 -- notification_[width|height|margin]
 -- notification_[border_color|border_width|shape|opacity]
+
+theme.wibar_border_width = 0
+theme.wibar_border_color = color_dark
+theme.wibar_shape = gears.shape.rounded_rect
+theme.wibar_bg = color_primary
+
+theme.bg_systray = color_primary
+
+theme.taglist_bg_focus = color_primary
+theme.taglist_bg_occupied = color_primary
+theme.taglist_bg_empty = color_primary
+theme.taglist_fg_focus = color_orange
+theme.taglist_font = "Hack NF"
+theme.taglist_spacing =  10
 
 -- Variables set for theming the menu:
 -- menu_[bg|fg]_[normal|focus]
 -- menu_[border_color|border_width]
 theme.menu_submenu_icon = themes_path.."default/submenu.png"
-theme.menu_height = dpi(15)
-theme.menu_width  = dpi(100)
+theme.menu_height = dpi(30)
+theme.menu_width  = dpi(200)
 
 -- You can add as many variables as
 -- you wish and access them by using
@@ -97,7 +125,7 @@ theme.titlebar_maximized_button_focus_inactive  = themes_path.."default/titlebar
 theme.titlebar_maximized_button_normal_active = themes_path.."default/titlebar/maximized_normal_active.png"
 theme.titlebar_maximized_button_focus_active  = themes_path.."default/titlebar/maximized_focus_active.png"
 
-theme.wallpaper = themes_path.."default/background.png"
+theme.wallpaper = themes_path.."bg.png"
 
 -- You can use your own layout icons like this:
 theme.layout_fairh = themes_path.."default/layouts/fairhw.png"
@@ -124,7 +152,7 @@ theme.awesome_icon = theme_assets.awesome_icon(
 
 -- Define the icon theme for application icons. If not set then the icons
 -- from /usr/share/icons and /usr/share/icons/hicolor will be used.
-theme.icon_theme = nil
+theme.icon_theme = "~/.icons/kora"
 
 return theme
 
