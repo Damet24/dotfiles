@@ -192,7 +192,7 @@ awful.screen.connect_for_each_screen(function(s)
   set_wallpaper(s)
 
   -- Each screen has its own tag table.
-  awful.tag({ "1", "2", "3", "4", "5", "6", "7", "8", "9" }, s, awful.layout.layouts[1])
+  awful.tag({ "1", "2", "3", "4", "5", "6", "7", "ﭮ", "" }, s, awful.layout.layouts[1])
 
   -- Create a promptbox for each screen
   s.mypromptbox = awful.widget.prompt()
@@ -223,37 +223,41 @@ awful.screen.connect_for_each_screen(function(s)
   }
 
   -- Create the wibox
-  s.mywibox = awful.wibar({
-    -- position = "top",
-    -- type = "dock",
-    screen = s,
-    height = 40,
-    width = "80%",
-    x = 0,
-    y = 0,
-  })
-
-  -- Add widgets to the wibox
-  s.mywibox:setup {
-    layout = wibox.layout.align.horizontal,
-    { -- Left widgets
-      layout = wibox.layout.fixed.horizontal,
-      -- mylauncher,
-      s.mytaglist,
-      s.mypromptbox,
-    },
-    -- s.mytasklist, -- Middle widget
-    {
-      widget = wibox.widget.separator
-    },
-    { -- Right widgets
-      layout = wibox.layout.fixed.horizontal,
-      mykeyboardlayout,
-      wibox.widget.systray(),
-      mytextclock,
-      -- s.mylayoutbox,
-    },
-  }
+--   s.mywibox = awful.wibar({
+--     -- position = "top",
+--     -- type = "dock",
+--     screen = s,
+--     height = 40,
+--     width = "80%",
+--     x = 0,
+--     y = 0,
+--   })
+--  
+--   -- Add widgets to the wibox
+--   s.mywibox:setup {
+--     layout = wibox.layout.align.horizontal,
+--     { -- Left widgets
+--       layout = wibox.layout.fixed.horizontal,
+--       -- mylauncher,
+--        logout_menu_widget(),
+--       s.mytaglist,
+--       s.mypromptbox,
+--     },
+--     -- s.mytasklist, -- Middle widget
+--     {
+--       widget = wibox.widget.separator
+--     },
+--     { -- Right widgets
+--       layout = wibox.layout.fixed.horizontal,
+--       mykeyboardlayout,
+--       -- battery_widget(),
+--       batteryarc_widget(),
+--       -- brightness_widget{type = 'icon_and_text', program = 'light'},
+--       wibox.widget.systray(),
+--       mytextclock,
+--       -- s.mylayoutbox,
+--     },
+--   }
 end)
 -- }}}
 
@@ -575,7 +579,7 @@ client.connect_signal("request::titlebars", function(c)
     },
     { -- Middle
       { -- Title
-        align  = "center",
+        -- align  = "center",
         widget = awful.titlebar.widget.titlewidget(c)
       },
       buttons = buttons,
@@ -604,3 +608,4 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 
 awful.util.spawn("picom")
 awful.util.spawn_with_shell("feh --bg-fill ~/dotfiles/awesome/bg.png")
+awful.util.spawn_with_shell("~/.config/polybar/launch.sh")

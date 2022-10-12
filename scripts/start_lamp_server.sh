@@ -3,7 +3,7 @@
 start_server() {
 	cd ~/Dev/coltek
 
-	docker-compose up -d
+	docker compose up -d
 }
 
 stop_server() {

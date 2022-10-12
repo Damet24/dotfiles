@@ -47,3 +47,14 @@ source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+endColor="\e[0m"
+magenta="\e[35m"
+cian="\e[96m"
+green="\e[92m"
+
+
+echo "\n\t\t\t\t${magenta}
+\t\t\t▀▄▀ █░█ █▄▄ █░█ █▄░█ ▀█▀ █░█
+\t\t\t█░█ █▄█ █▄█ █▄█ █░▀█ ░█░ █▄█${endColor}
+\t\t\t${cian}damet${endColor} - ${green}zsh${endColor}"

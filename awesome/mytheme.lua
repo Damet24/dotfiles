@@ -34,7 +34,7 @@ theme.fg_urgent     = color_white
 theme.fg_minimize   = color_white
 
 theme.useless_gap   = dpi(20)
-theme.border_width  = dpi(4)
+theme.border_width  = dpi(0)
 theme.border_normal = "#424153"
 theme.border_focus  = "#9332B0"
 theme.border_marked = "#91231c"
@@ -69,6 +69,7 @@ theme.notification_max_height = 100
 theme.notification_height = 100
 theme.notification_margin = 200
 theme.notification_opacity = 0.95
+theme.notification_shape = gears.shape.rounded_rect
 -- notification_[width|height|margin]
 -- notification_[border_color|border_width|shape|opacity]
 
