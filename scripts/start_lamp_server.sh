@@ -7,7 +7,7 @@ start_server() {
 }
 
 stop_server() {
-	docker stop lamp-php8 lamp-mysql8 lamp-redis lamp-phpmyadmin
+	docker stop lamp-php81 lamp-mysql8 lamp-redis lamp-phpmyadmin
 }
 
 start_terminal() {
