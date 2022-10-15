@@ -20,9 +20,10 @@ Plugins manager [packer.nvim](https://github.com/wbthomason/packer.nvim#features
 
 ### screenshot
 
-![scroonshot](./screenshots/Screenshot_2022-09-01_21-56-57.png)
-![scroonshot](./screenshots/Screenshot_2022-09-01_21-57-34.png)
-![scroonshot](./screenshots/Screenshot_2022-09-01_21-58-04.png)
+![scroonshot](./screenshots/nvim1.png)
+![scroonshot](./screenshots/nvim2.png)
+![scroonshot](./screenshots/nvim3.png)
+![scroonshot](./screenshots/nvim4.png)
 
 ## Zsh Config
 Promp [Starship](https://starship.rs/)
