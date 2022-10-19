@@ -60,6 +60,7 @@ beautiful.init(gears.filesystem.get_configuration_dir() .. "mytheme.lua")
 terminal = "kitty"
 editor = os.getenv("EDITOR") or "nvim"
 editor_cmd = terminal .. " -e " .. editor
+browser = "google-chrome"
 
 -- Default modkey.
 -- Usually, Mod4 is the key with a logo between Control and Alt.
@@ -223,41 +224,41 @@ awful.screen.connect_for_each_screen(function(s)
   }
 
   -- Create the wibox
---   s.mywibox = awful.wibar({
---     -- position = "top",
---     -- type = "dock",
---     screen = s,
---     height = 40,
---     width = "80%",
---     x = 0,
---     y = 0,
---   })
---  
---   -- Add widgets to the wibox
---   s.mywibox:setup {
---     layout = wibox.layout.align.horizontal,
---     { -- Left widgets
---       layout = wibox.layout.fixed.horizontal,
---       -- mylauncher,
---        logout_menu_widget(),
---       s.mytaglist,
---       s.mypromptbox,
---     },
---     -- s.mytasklist, -- Middle widget
---     {
---       widget = wibox.widget.separator
---     },
---     { -- Right widgets
---       layout = wibox.layout.fixed.horizontal,
---       mykeyboardlayout,
---       -- battery_widget(),
---       batteryarc_widget(),
---       -- brightness_widget{type = 'icon_and_text', program = 'light'},
---       wibox.widget.systray(),
---       mytextclock,
---       -- s.mylayoutbox,
---     },
---   }
+  --   s.mywibox = awful.wibar({
+  --     -- position = "top",
+  --     -- type = "dock",
+  --     screen = s,
+  --     height = 40,
+  --     width = "80%",
+  --     x = 0,
+  --     y = 0,
+  --   })
+  --
+  --   -- Add widgets to the wibox
+  --   s.mywibox:setup {
+  --     layout = wibox.layout.align.horizontal,
+  --     { -- Left widgets
+  --       layout = wibox.layout.fixed.horizontal,
+  --       -- mylauncher,
+  --        logout_menu_widget(),
+  --       s.mytaglist,
+  --       s.mypromptbox,
+  --     },
+  --     -- s.mytasklist, -- Middle widget
+  --     {
+  --       widget = wibox.widget.separator
+  --     },
+  --     { -- Right widgets
+  --       layout = wibox.layout.fixed.horizontal,
+  --       mykeyboardlayout,
+  --       -- battery_widget(),
+  --       batteryarc_widget(),
+  --       -- brightness_widget{type = 'icon_and_text', program = 'light'},
+  --       wibox.widget.systray(),
+  --       mytextclock,
+  --       -- s.mylayoutbox,
+  --     },
+  --   }
 end)
 -- }}}
 
@@ -277,8 +278,8 @@ globalkeys = gears.table.join(
     { description = "view previous", group = "tag" }),
   awful.key({ modkey, }, "Right", awful.tag.viewnext,
     { description = "view next", group = "tag" }),
-  awful.key({ modkey, }, "Escape", awful.tag.history.restore,
-    { description = "go back", group = "tag" }),
+  -- awful.key({ modkey, }, "Escape", awful.tag.history.restore,
+  --   { description = "go back", group = "tag" }),
 
   awful.key({ modkey, }, "j",
     function()
@@ -292,28 +293,12 @@ globalkeys = gears.table.join(
     end,
     { description = "focus previous by index", group = "client" }
   ),
-  awful.key({ modkey, }, "w", function() mymainmenu:show() end,
-    { description = "show main menu", group = "awesome" }),
+  -- awful.key({ modkey, }, "w", function() mymainmenu:show() end,
+  --   { description = "show main menu", group = "awesome" }),
 
   -- Layout manipulation
-  awful.key({ modkey, "Shift" }, "j", function() awful.client.swap.byidx(1) end,
-    { description = "swap with next client by index", group = "client" }),
-  awful.key({ modkey, "Shift" }, "k", function() awful.client.swap.byidx(-1) end,
-    { description = "swap with previous client by index", group = "client" }),
-  awful.key({ modkey, "Control" }, "j", function() awful.screen.focus_relative(1) end,
-    { description = "focus the next screen", group = "screen" }),
-  awful.key({ modkey, "Control" }, "k", function() awful.screen.focus_relative(-1) end,
-    { description = "focus the previous screen", group = "screen" }),
   awful.key({ modkey, }, "u", awful.client.urgent.jumpto,
     { description = "jump to urgent client", group = "client" }),
-  awful.key({ modkey, }, "Tab",
-    function()
-      awful.client.focus.history.previous()
-      if client.focus then
-        client.focus:raise()
-      end
-    end,
-    { description = "go back", group = "client" }),
 
   -- Standard program
   awful.key({ modkey, }, "Return", function() awful.spawn(terminal) end,
@@ -356,6 +341,19 @@ globalkeys = gears.table.join(
   awful.key({ modkey }, "r", function() awful.screen.focused().mypromptbox:run() end,
     { description = "run prompt", group = "launcher" }),
 
+  -- launchers
+  awful.key({ modkey, "Shift" }, "a",
+    function()
+      awful.spawn('google-chrome')
+    end,
+    { description = "run Notification", group = "launcher" }),
+
+  -- awful.key({ modkey }, "c",
+  --   function()
+  --     awful.spawn('google-chrome')
+  --   end,
+  --   { description = "Run Chrome", group = "launcher" }),
+
   awful.key({ modkey }, "x",
     function()
       awful.prompt.run {
@@ -381,38 +379,7 @@ clientkeys = gears.table.join(
   awful.key({ modkey, "Shift" }, "c", function(c) c:kill() end,
     { description = "close", group = "client" }),
   awful.key({ modkey, "Control" }, "space", awful.client.floating.toggle,
-    { description = "toggle floating", group = "client" }),
-  awful.key({ modkey, "Control" }, "Return", function(c) c:swap(awful.client.getmaster()) end,
-    { description = "move to master", group = "client" }),
-  awful.key({ modkey, }, "o", function(c) c:move_to_screen() end,
-    { description = "move to screen", group = "client" }),
-  awful.key({ modkey, }, "t", function(c) c.ontop = not c.ontop end,
-    { description = "toggle keep on top", group = "client" }),
-  awful.key({ modkey, }, "n",
-    function(c)
-      -- The client currently has the input focus, so it cannot be
-      -- minimized, since minimized clients can't have the focus.
-      c.minimized = true
-    end,
-    { description = "minimize", group = "client" }),
-  awful.key({ modkey, }, "m",
-    function(c)
-      c.maximized = not c.maximized
-      c:raise()
-    end,
-    { description = "(un)maximize", group = "client" }),
-  awful.key({ modkey, "Control" }, "m",
-    function(c)
-      c.maximized_vertical = not c.maximized_vertical
-      c:raise()
-    end,
-    { description = "(un)maximize vertically", group = "client" }),
-  awful.key({ modkey, "Shift" }, "m",
-    function(c)
-      c.maximized_horizontal = not c.maximized_horizontal
-      c:raise()
-    end,
-    { description = "(un)maximize horizontally", group = "client" })
+    { description = "toggle floating", group = "client" })
 )
 
 -- Bind all key numbers to tags.
@@ -596,6 +563,36 @@ client.connect_signal("request::titlebars", function(c)
     layout = wibox.layout.align.horizontal
   }
 end)
+
+-- battery warning
+-- created by bpdp
+
+local function trim(s)
+  return s:find '^%s*$' and '' or s:match '^%s*(.*%S)'
+end
+
+local function bat_notification()
+
+  local f_capacity = assert(io.open("/sys/class/power_supply/BAT0/capacity", "r"))
+  local f_status = assert(io.open("/sys/class/power_supply/BAT0/status", "r"))
+
+  local bat_capacity = tonumber(f_capacity:read("*all"))
+  local bat_status = trim(f_status:read("*all"))
+
+  if (bat_capacity <= 10 and bat_status == "Discharging") then
+    naughty.notify({ title = "Battery Warning"
+      , text = "Battery low! " .. bat_capacity .. "%" .. " left!"
+      , timeout = 15
+      , position = "bottom_left"
+    })
+  end
+end
+
+battimer = timer({ timeout = 120 })
+battimer:connect_signal("timeout", bat_notification)
+battimer:start()
+
+-- end here for battery warning
 
 -- Enable sloppy focus, so that focus follows mouse.
 client.connect_signal("mouse::enter", function(c)

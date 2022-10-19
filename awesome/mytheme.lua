@@ -12,7 +12,7 @@ local themes_path = "/home/damet/dotfiles/awesome"
 
 local theme = {}
 
-theme.font          = "Hack NF"
+theme.font          = "Iosevka NF"
 
 color_dark = "#424153"
 color_primary = "#663399"
@@ -22,7 +22,7 @@ color_orange = "#e47a13"
 color_transparent = "#000000a"
 color3 = "#535d6c"
 
-theme.bg_normal     = color_dark
+theme.bg_normal     = "#000000"
 theme.bg_focus      = color_primary
 theme.bg_urgent     = "#A62F9C"
 theme.bg_minimize   = "#444444"
