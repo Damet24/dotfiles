@@ -1,30 +1,47 @@
-require('telescope').setup{
-  defaults = {
-    -- Default configuration for telescope goes here:
-    -- config_key = value,
-    mappings = {
-      i = {
-        -- map actions.which_key to <C-h> (default: <C-/>)
-        -- actions.which_key shows the mappings for your picker,
-        -- e.g. git_{create, delete, ...}_branch for the git_branches picker
-        ["<C-h>"] = "which_key"
-      }
-    }
-  },
-  pickers = {
-    -- Default configuration for builtin pickers goes here:
-    -- picker_name = {
-    --   picker_config_key = value,
-    --   ...
-    -- }
-    -- Now the picker_config_key will be applied every time you call this
-    -- builtin picker
-  },
-  extensions = {
-    -- Your extension configuration goes here:
-    -- extension_name = {
-    --   extension_config_key = value,
-    -- }
-    -- please take a look at the readme of the extension you want to configure
+return require 'packer'.startup(function()
+  use 'wbthomason/packer.nvim'
+
+  -- theme
+  use 'morhetz/gruvbox'
+  use 'https://github.com/bluz71/vim-moonfly-colors'
+  use 'navarasu/onedark.nvim'
+  use 'folke/tokyonight.nvim'
+  use 'patstockwell/vim-monokai-tasty'
+
+  use 'glepnir/dashboard-nvim'
+
+  -- utils
+  use { 'kyazdani42/nvim-web-devicons' }
+  use { 'kyazdani42/nvim-tree.lua' }
+  use { 'nvim-lualine/lualine.nvim', requires = { 'kyazdani42/nvim-web-devicons', opt = true } }
+
+  use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
+
+  use "lukas-reineke/indent-blankline.nvim"
+
+  use { 'ibhagwan/fzf-lua', requires = { 'kyazdani42/nvim-web-devicons' } }
+
+  use "terrortylor/nvim-comment"
+
+  use 'voldikss/vim-floaterm'
+
+  use {
+    "windwp/nvim-autopairs",
+    config = function() require("nvim-autopairs").setup {} end
   }
-}
+
+  use 'williamboman/nvim-lsp-installer'
+  use 'neovim/nvim-lspconfig' -- Configurations for Nvim LSP
+  use 'hrsh7th/cmp-nvim-lsp'
+  use 'hrsh7th/cmp-buffer'
+  use 'hrsh7th/cmp-path'
+  use 'hrsh7th/cmp-cmdline'
+  use 'hrsh7th/nvim-cmp'
+  use 'L3MON4D3/LuaSnip'
+  use 'saadparwaiz1/cmp_luasnip'
+
+  use 'windwp/nvim-ts-autotag'
+
+  use 'nvim-lua/plenary.nvim'
+  use 'mhinz/vim-startify'
+end)
