@@ -342,12 +342,11 @@ globalkeys = gears.table.join(
     { description = "run prompt", group = "launcher" }),
 
   -- launchers
-  awful.key({ modkey, "Shift" }, "a",
-    function()
-      awful.spawn('google-chrome')
-    end,
-    { description = "run Notification", group = "launcher" }),
+  awful.key({ modkey }, "w", function() awful.spawn('google-chrome') end,
+    { description = "Open Chrome", group = "launcher" }),
 
+  awful.key({ modkey }, "e", function() awful.spawn('thunar') end,
+    { description = "Open Thunar", group = "launcher" }),
   -- awful.key({ modkey }, "c",
   --   function()
   --     awful.spawn('google-chrome')
