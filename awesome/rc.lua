@@ -605,3 +605,4 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 awful.util.spawn("picom -b --experimental-backends")
 awful.util.spawn_with_shell("feh --bg-fill ~/dotfiles/awesome/bg.png")
 awful.util.spawn_with_shell("~/.config/polybar/launch.sh")
+awful.util.spawn_with_shell("xfce4-clipman")
