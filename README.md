@@ -6,7 +6,7 @@
 - kitty (terminal)
 - pycom (compositor)
 
-repo de temas de kitty https://github.com/dexpota/kitty-themes.git
+<!-- repo de temas de kitty https://github.com/dexpota/kitty-themes.git -->
 
 ### Screenshots
 ![screenshot 1](./screenshots/img1.png)
@@ -26,7 +26,7 @@ Plugins manager [packer.nvim](https://github.com/wbthomason/packer.nvim#features
 ![scroonshot](./screenshots/nvim4.png)
 
 ## Zsh Config
-Promp [Starship](https://starship.rs/)
+Prompt [Starship](https://starship.rs/)
 Plugins
 - **[zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)**
 - **[zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)**
