@@ -351,6 +351,9 @@ globalkeys = gears.table.join(
   awful.key({ modkey }, "d", function() awful.spawn('rofi -show drun -show-icons -theme ~/dotfiles/polybar/scripts/themes/rofi.rasi') end,
     { description = "Launch Rofi", group = "launcher" }),
 
+    awful.key({ modkey }, "c", function() awful.spawn('rofi -modi "clipboard:greenclip print" -show clipboard -theme ~/dotfiles/polybar/scripts/themes/rofi.rasi') end,
+    { description = "Launch Rofi clipboard", group = "launcher" }),
+
   -- awful.key({ modkey }, "c",
   --   function()
   --     awful.spawn('google-chrome')
@@ -609,4 +612,4 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 awful.util.spawn("picom -b --experimental-backends")
 awful.util.spawn_with_shell("feh --bg-fill ~/dotfiles/awesome/bg.png")
 awful.util.spawn_with_shell("~/.config/polybar/launch.sh")
-awful.util.spawn_with_shell("xfce5-clipman")
+awful.util.spawn_with_shell("greenclip daemon")
