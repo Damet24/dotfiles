@@ -1,10 +1,11 @@
 <h1 align="center">My DotFiles Config</h1>
 
 ### Genal
-- Neovim (editor)
-- zsh (shell)
-- kitty (terminal)
-- pycom (compositor)
+- WM - [AwesomeWM](https://awesomewm.org/)
+- Editor - [Neovim](https://neovim.io/)
+- SHell - [zsh](https://www.zsh.org/)
+- Terminal - [kitty](https://sw.kovidgoyal.net/kitty/)
+- Compositor - [picom](https://github.com/yshui/picom)
 
 <!-- repo de temas de kitty https://github.com/dexpota/kitty-themes.git -->
 
