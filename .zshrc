@@ -12,6 +12,8 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+export PATH="$HOME/.local/bin:$PATH"
+
 # CUSTOM
 
 alias cat='/bin/bat'
@@ -48,5 +50,5 @@ source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-bindkey "^[[1,3C" forward-word
-bindkey "^[[1,3D" backward-word
+bindkey "^[[1;5C" forward-word
+bindkey "^[[1;5D" backward-word

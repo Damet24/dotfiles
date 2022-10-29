@@ -1,7 +1,7 @@
 #!/bin/bash
 
 start_server() {
-	cd ~/Dev/coltek
+	cd ~/Dev/lamp
 
 	docker compose up -d
 }

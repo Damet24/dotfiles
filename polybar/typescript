@@ -1,0 +1,83 @@
+Script started on 2022-10-29 13:01:34-05:00 [TERM="xterm-kitty" TTY="/dev/pts/1" COLUMNS="103" LINES="41"]
+[1m[7m%[27m[1m[0m                                                                                                       [0m[27m[24m[J
+[38;2;154;52;142mdamet[0m[38;2;154;52;142m [0m[38;2;218;98;125m [0m[38;2;218;98;125m…/dotfiles/polybar[0m[38;2;218;98;125m [0m[38;2;252;161;125m [0m[38;2;252;161;125m[0m[38;2;252;161;125m [0m[38;2;252;161;125mmain[0m[38;2;252;161;125m [0m[38;2;252;161;125m✘[0m[38;2;252;161;125m![0m[38;2;252;161;125m?[0m[38;2;252;161;125m [0m[38;2;51;101;138m ♥ [0m[38;2;51;101;138m13:01[0m[38;2;51;101;138m [0m [K[?1h[?2004h[32m.[39m[39m[4m.[4m/[24m[4m.[4m/[4ms[24m[24m[1m[31m.[24m[1m[31m/[24m[1m[31ms[1m[31mr[0m[39m[0m[39m.[0m[39m/[0m[39ms[0m[39mr[4m.[4m/[4ms[24m [4ms[4mc[24m[4mc[4mr[24m[4mr[4mi[24m[4mi[4mp[24m[4mp[4mts[1m[4m/[0m[24m[4ms[24m[0m[24m [?1l[?2004l
+[1m[7m%[27m[1m[0m                                                                                                       [0m[27m[24m[J
+[38;2;154;52;142mdamet[0m[38;2;154;52;142m [0m[38;2;218;98;125m [0m[38;2;218;98;125m…/dotfiles/polybar/scripts[0m[38;2;218;98;125m [0m[38;2;252;161;125m [0m[38;2;252;161;125m[0m[38;2;252;161;125m [0m[38;2;252;161;125mmain[0m[38;2;252;161;125m [0m[38;2;252;161;125m✘[0m[38;2;252;161;125m![0m[38;2;252;161;125m?[0m[38;2;252;161;125m [0mvia [1;33m [0m[1;33mpyenv [0m[38;2;51;101;138m ♥ [0m[38;2;51;101;138m13:01[0m[38;2;51;101;138m [0m [K[?1h[?2004h[32ml[39m[32ml[32ml[39m[?1l[?2004l
+[38;5;4m[1md[0m[38;5;2mr[39m[38;5;3mw[39m[38;5;1mx[39m[38;5;2mr[39m[38;5;3mw[39m[38;5;1mx[39m[38;5;2mr[39m[38;5;245m-[39m[38;5;1mx[39m[38;5;6m[39m [38;5;230mdamet[39m [38;5;187mdamet[39m [38;5;229m4.0[39m [38;5;229mKB[39m [38;5;36mWed Oct 26 18:49:36 2022[39m [38;5;4m[1m .[0m/
+[38;5;4m[1md[0m[38;5;2mr[39m[38;5;3mw[39m[38;5;1mx[39m[38;5;2mr[39m[38;5;3mw[39m[38;5;1mx[39m[38;5;2mr[39m[38;5;245m-[39m[38;5;1mx[39m[38;5;6m[39m [38;5;230mdamet[39m [38;5;187mdamet[39m [38;5;229m4.0[39m [38;5;229mKB[39m [38;5;40mSat Oct 29 13:01:34 2022[39m [38;5;4m[1m ..[0m/
+[38;5;4m[1md[0m[38;5;2mr[39m[38;5;3mw[39m[38;5;1mx[39m[38;5;2mr[39m[38;5;3mw[39m[38;5;1mx[39m[38;5;2mr[39m[38;5;245m-[39m[38;5;1mx[39m[38;5;6m[39m [38;5;230mdamet[39m [38;5;187mdamet[39m [38;5;229m4.0[39m [38;5;229mKB[39m [38;5;36mWed Oct 26 18:49:36 2022[39m [38;5;4m[1m themes[0m/
+[38;5;2m[1m.[0m[38;5;2mr[39m[38;5;3mw[39m[38;5;1mx[39m[38;5;2mr[39m[38;5;3mw[39m[38;5;1mx[39m[38;5;2mr[39m[38;5;245m-[39m[38;5;1mx[39m[38;5;6m[39m [38;5;230mdamet[39m [38;5;187mdamet[39m [38;5;229m1.2[39m [38;5;229mKB[39m [38;5;36mWed Oct 26 18:49:36 2022[39m [38;5;2m[1m pavolume.sh[0m*
+[38;5;2m[1m.[0m[38;5;2mr[39m[38;5;3mw[39m[38;5;1mx[39m[38;5;2mr[39m[38;5;3mw[39m[38;5;1mx[39m[38;5;2mr[39m[38;5;245m-[39m[38;5;1mx[39m[38;5;6m[39m [38;5;230mdamet[39m [38;5;187mdamet[39m [38;5;229m264[39m [38;5;229mB[39m  [38;5;36mWed Oct 26 18:49:36 2022[39m [38;5;2m[1m playerctl.sh[0m*
+[38;5;2m[1m.[0m[38;5;2mr[39m[38;5;3mw[39m[38;5;1mx[39m[38;5;2mr[39m[38;5;3mw[39m[38;5;1mx[39m[38;5;2mr[39m[38;5;245m-[39m[38;5;1mx[39m[38;5;6m[39m [38;5;230mdamet[39m [38;5;187mdamet[39m [38;5;229m726[39m [38;5;229mB[39m  [38;5;36mWed Oct 26 18:49:36 2022[39m [38;5;2m[1m powermenu_alt[0m*
+.[38;5;2mr[39m[38;5;3mw[39m[38;5;245m-[39m[38;5;2mr[39m[38;5;3mw[39m[38;5;245m-[39m[38;5;2mr[39m[38;5;245m-[39m[38;5;245m-[39m[38;5;6m[39m [38;5;230mdamet[39m [38;5;187mdamet[39m [38;5;229m3.6[39m [38;5;229mKB[39m [38;5;36mWed Oct 26 18:49:36 2022[39m  spotify_status.py
+[1m[7m%[27m[1m[0m                                                                                                       [0m[27m[24m[J
+[38;2;154;52;142mdamet[0m[38;2;154;52;142m [0m[38;2;218;98;125m [0m[38;2;218;98;125m…/dotfiles/polybar/scripts[0m[38;2;218;98;125m [0m[38;2;252;161;125m [0m[38;2;252;161;125m[0m[38;2;252;161;125m [0m[38;2;252;161;125mmain[0m[38;2;252;161;125m [0m[38;2;252;161;125m✘[0m[38;2;252;161;125m![0m[38;2;252;161;125m?[0m[38;2;252;161;125m [0mvia [1;33m [0m[1;33mpyenv [0m[38;2;51;101;138m ♥ [0m[38;2;51;101;138m13:01[0m[38;2;51;101;138m [0m [K[?1h[?2004h[32m.[39m[32m.[39m[90m/scripts[39m[8D[39m[4m.[39m[4m/[24m[4m.[4m/[39m[4mp[24m[39m [39m [39m [39m [39m [39m [4mp[4ma[24m[4ma[4mv[24m[24m[32m.[24m[32m/[24m[32mp[24m[32ma[24m[32mv[32molume.sh[39m[1m [0m[0m [?1l[?2004l
+./pavolume.sh: line 6: pamixer: command not found
+./pavolume.sh: line 7: pamixer: command not found
+./pavolume.sh: line 18: [: : integer expression expected
+%{A5:pamixer -d 10:}%{A4:pamixer -i 10:}%{A1:pamixer -t:}V: %{A}%{A1:pamixer --set-volume 10:}-%{A}%{A1:pamixer --set-volume 20:}-%{A}%{A1:pamixer --set-volume 30:}-%{A}%{A1:pamixer --set-volume 40:}-%{A}%{A1:pamixer --set-volume 50:}-%{A}%{A1:pamixer --set-volume 60:}-%{A}%{A1:pamixer --set-volume 70:}-%{A}%{A1:pamixer --set-volume 80:}-%{A}%{A1:pamixer --set-volume 90:}-%{A}%{A1:pamixer --set-volume 100:}-%{A}%{A}%{A}
+[1m[7m%[27m[1m[0m                                                                                                       [0m[27m[24m[J
+[38;2;154;52;142mdamet[0m[38;2;154;52;142m [0m[38;2;218;98;125m [0m[38;2;218;98;125m…/dotfiles/polybar/scripts[0m[38;2;218;98;125m [0m[38;2;252;161;125m [0m[38;2;252;161;125m[0m[38;2;252;161;125m [0m[38;2;252;161;125mmain[0m[38;2;252;161;125m [0m[38;2;252;161;125m✘[0m[38;2;252;161;125m![0m[38;2;252;161;125m?[0m[38;2;252;161;125m [0mvia [1;33m [0m[1;33mpyenv [0m[38;2;51;101;138m ♥ [0m[38;2;51;101;138m13:01[0m[38;2;51;101;138m [0m [K[?1h[?2004h[4mp[24m[4mp[4ma[24m[24m[1m[31mp[24m[1m[31ma[1m[31mm[0m[39m[1m[31mm[1m[31mi[0m[39m[1m[31mi[1m[31mx[0m[39m[1m[31mx[1m[31me[0m[39m[1m[31me[1m[31mr[0m[39m[0m[39m [0m[39m [0m[39m [0m[39m [0m[39m [0m[39m [0m[39m [32m./pavolume.sh[39m[?1l[?2004l
+amixer: unrecognized option '--get-volume'
+Invalid switch or option -? needs an argument.
+amixer: unrecognized option '--get-mute'
+Invalid switch or option -? needs an argument.
+./pavolume.sh: line 18: [: : integer expression expected
+%{A5:pamixer -d 10:}%{A4:pamixer -i 10:}%{A1:pamixer -t:}V: %{A}%{A1:pamixer --set-volume 10:}-%{A}%{A1:pamixer --set-volume 20:}-%{A}%{A1:pamixer --set-volume 30:}-%{A}%{A1:pamixer --set-volume 40:}-%{A}%{A1:pamixer --set-volume 50:}-%{A}%{A1:pamixer --set-volume 60:}-%{A}%{A1:pamixer --set-volume 70:}-%{A}%{A1:pamixer --set-volume 80:}-%{A}%{A1:pamixer --set-volume 90:}-%{A}%{A1:pamixer --set-volume 100:}-%{A}%{A}%{A}
+[1m[7m%[27m[1m[0m                                                                                                       [0m[27m[24m[J
+[38;2;154;52;142mdamet[0m[38;2;154;52;142m [0m[38;2;218;98;125m [0m[38;2;218;98;125m…/dotfiles/polybar/scripts[0m[38;2;218;98;125m [0m[38;2;252;161;125m [0m[38;2;252;161;125m[0m[38;2;252;161;125m [0m[38;2;252;161;125mmain[0m[38;2;252;161;125m [0m[38;2;252;161;125m✘[0m[38;2;252;161;125m![0m[38;2;252;161;125m?[0m[38;2;252;161;125m [0mvia [1;33m [0m[1;33mpyenv [0m[38;2;51;101;138m ♥ [0m[38;2;51;101;138m13:02[0m[38;2;51;101;138m [0m [K[?1h[?2004h[4mp[24m[4mp[4ma[24m[24m[1m[31mp[24m[1m[31ma[1m[31mm[0m[39m[1m[31mm[1m[31mi[0m[39m[1m[31mi[1m[31mx[0m[39m[1m[31mx[1m[31me[0m[39m[1m[31me[1m[31mr[0m[39m[0m[39m [0m[39m [0m[39m [0m[39m [0m[39m [0m[39m [0m[39m [32ml[39m[32ml[39m[90ml[39m[32ml[32ml[39m[?1l[?2004l
+[38;5;4m[1md[0m[38;5;2mr[39m[38;5;3mw[39m[38;5;1mx[39m[38;5;2mr[39m[38;5;3mw[39m[38;5;1mx[39m[38;5;2mr[39m[38;5;245m-[39m[38;5;1mx[39m[38;5;6m[39m [38;5;230mdamet[39m [38;5;187mdamet[39m [38;5;229m4.0[39m [38;5;229mKB[39m [38;5;36mWed Oct 26 18:49:36 2022[39m [38;5;4m[1m .[0m/
+[38;5;4m[1md[0m[38;5;2mr[39m[38;5;3mw[39m[38;5;1mx[39m[38;5;2mr[39m[38;5;3mw[39m[38;5;1mx[39m[38;5;2mr[39m[38;5;245m-[39m[38;5;1mx[39m[38;5;6m[39m [38;5;230mdamet[39m [38;5;187mdamet[39m [38;5;229m4.0[39m [38;5;229mKB[39m [38;5;40mSat Oct 29 13:01:34 2022[39m [38;5;4m[1m ..[0m/
+[38;5;4m[1md[0m[38;5;2mr[39m[38;5;3mw[39m[38;5;1mx[39m[38;5;2mr[39m[38;5;3mw[39m[38;5;1mx[39m[38;5;2mr[39m[38;5;245m-[39m[38;5;1mx[39m[38;5;6m[39m [38;5;230mdamet[39m [38;5;187mdamet[39m [38;5;229m4.0[39m [38;5;229mKB[39m [38;5;36mWed Oct 26 18:49:36 2022[39m [38;5;4m[1m themes[0m/
+[38;5;2m[1m.[0m[38;5;2mr[39m[38;5;3mw[39m[38;5;1mx[39m[38;5;2mr[39m[38;5;3mw[39m[38;5;1mx[39m[38;5;2mr[39m[38;5;245m-[39m[38;5;1mx[39m[38;5;6m[39m [38;5;230mdamet[39m [38;5;187mdamet[39m [38;5;229m1.2[39m [38;5;229mKB[39m [38;5;40mSat Oct 29 13:02:05 2022[39m [38;5;2m[1m pavolume.sh[0m*
+[38;5;2m[1m.[0m[38;5;2mr[39m[38;5;3mw[39m[38;5;1mx[39m[38;5;2mr[39m[38;5;3mw[39m[38;5;1mx[39m[38;5;2mr[39m[38;5;245m-[39m[38;5;1mx[39m[38;5;6m[39m [38;5;230mdamet[39m [38;5;187mdamet[39m [38;5;229m264[39m [38;5;229mB[39m  [38;5;36mWed Oct 26 18:49:36 2022[39m [38;5;2m[1m playerctl.sh[0m*
+[38;5;2m[1m.[0m[38;5;2mr[39m[38;5;3mw[39m[38;5;1mx[39m[38;5;2mr[39m[38;5;3mw[39m[38;5;1mx[39m[38;5;2mr[39m[38;5;245m-[39m[38;5;1mx[39m[38;5;6m[39m [38;5;230mdamet[39m [38;5;187mdamet[39m [38;5;229m726[39m [38;5;229mB[39m  [38;5;36mWed Oct 26 18:49:36 2022[39m [38;5;2m[1m powermenu_alt[0m*
+.[38;5;2mr[39m[38;5;3mw[39m[38;5;245m-[39m[38;5;2mr[39m[38;5;3mw[39m[38;5;245m-[39m[38;5;2mr[39m[38;5;245m-[39m[38;5;245m-[39m[38;5;6m[39m [38;5;230mdamet[39m [38;5;187mdamet[39m [38;5;229m3.6[39m [38;5;229mKB[39m [38;5;36mWed Oct 26 18:49:36 2022[39m  spotify_status.py
+[1m[7m%[27m[1m[0m                                                                                                       [0m[27m[24m[J
+[38;2;154;52;142mdamet[0m[38;2;154;52;142m [0m[38;2;218;98;125m [0m[38;2;218;98;125m…/dotfiles/polybar/scripts[0m[38;2;218;98;125m [0m[38;2;252;161;125m [0m[38;2;252;161;125m[0m[38;2;252;161;125m [0m[38;2;252;161;125mmain[0m[38;2;252;161;125m [0m[38;2;252;161;125m✘[0m[38;2;252;161;125m![0m[38;2;252;161;125m?[0m[38;2;252;161;125m [0mvia [1;33m [0m[1;33mpyenv [0m[38;2;51;101;138m ♥ [0m[38;2;51;101;138m13:02[0m[38;2;51;101;138m [0m [K[?1h[?2004h[4mp[24m[4mp[4ml[24m[4mp[4ml[4ma[24m[4ma[4my[24m[24m[32mp[24m[32ml[24m[32ma[24m[32my[32merctl[39m[?1l[?2004l
+Usage:
+  playerctl [OPTION…] COMMAND - Controller for media players
+
+  For players supporting the MPRIS D-Bus specification
+
+Help Options:
+  -h, --help                     Show help options
+
+Application Options:
+  -p, --player=NAME              A comma separated list of names of players to control (default: the first available player)
+  -a, --all-players              Select all available players to be controlled
+  -i, --ignore-player=IGNORE     A comma separated list of names of players to ignore.
+  -f, --format                   A format string for printing properties and metadata
+  -F, --follow                   Block and append the query to output when it changes for the most recently updated player.
+  -l, --list-all                 List the names of running players that can be controlled
+  -s, --no-messages              Suppress diagnostic messages
+  -v, --version                  Print version information
+
+Available Commands:
+  play                    Command the player to play
+  pause                   Command the player to pause
+  play-pause              Command the player to toggle between play/pause
+  stop                    Command the player to stop
+  next                    Command the player to skip to the next track
+  previous                Command the player to skip to the previous track
+  position [OFFSET][+/-]  Command the player to go to the position or seek forward/backward OFFSET in seconds
+  volume [LEVEL][+/-]     Print or set the volume to LEVEL from 0.0 to 1.0
+  status                  Get the play status of the player
+  metadata [KEY...]       Print metadata information for the current track. If KEY is passed,
+                          print only those values. KEY may be artist,title, album, or any key found in the metadata.
+  open [URI]              Command for the player to open given URI.
+                          URI can be either file path or remote URL.
+  loop [STATUS]           Print or set the loop status.
+                          Can be "None", "Track", or "Playlist".
+  shuffle [STATUS]        Print or set the shuffle status.
+                          Can be "On", "Off", or "Toggle".
+
+[1m[7m%[27m[1m[0m                                                                                                       [0m[27m[24m[J
+[38;2;154;52;142mdamet[0m[38;2;154;52;142m [0m[38;2;218;98;125m [0m[38;2;218;98;125m…/dotfiles/polybar/scripts[0m[38;2;218;98;125m [0m[38;2;252;161;125m [0m[38;2;252;161;125m[0m[38;2;252;161;125m [0m[38;2;252;161;125mmain[0m[38;2;252;161;125m [0m[38;2;252;161;125m✘[0m[38;2;252;161;125m![0m[38;2;252;161;125m?[0m[38;2;252;161;125m [0mvia [1;33m [0m[1;33mpyenv [0m[38;2;51;101;138m ♥ [0m[38;2;51;101;138m13:02[0m[38;2;51;101;138m [0m [K[?1h[?2004h[32ml[39m[32ml[39m[90ml[39m[32ml[32ml[39m[?1l[?2004l
+[38;5;4m[1md[0m[38;5;2mr[39m[38;5;3mw[39m[38;5;1mx[39m[38;5;2mr[39m[38;5;3mw[39m[38;5;1mx[39m[38;5;2mr[39m[38;5;245m-[39m[38;5;1mx[39m[38;5;6m[39m [38;5;230mdamet[39m [38;5;187mdamet[39m [38;5;229m4.0[39m [38;5;229mKB[39m [38;5;40mSat Oct 29 13:02:45 2022[39m [38;5;4m[1m .[0m/
+[38;5;4m[1md[0m[38;5;2mr[39m[38;5;3mw[39m[38;5;1mx[39m[38;5;2mr[39m[38;5;3mw[39m[38;5;1mx[39m[38;5;2mr[39m[38;5;245m-[39m[38;5;1mx[39m[38;5;6m[39m [38;5;230mdamet[39m [38;5;187mdamet[39m [38;5;229m4.0[39m [38;5;229mKB[39m [38;5;40mSat Oct 29 13:01:34 2022[39m [38;5;4m[1m ..[0m/
+[38;5;4m[1md[0m[38;5;2mr[39m[38;5;3mw[39m[38;5;1mx[39m[38;5;2mr[39m[38;5;3mw[39m[38;5;1mx[39m[38;5;2mr[39m[38;5;245m-[39m[38;5;1mx[39m[38;5;6m[39m [38;5;230mdamet[39m [38;5;187mdamet[39m [38;5;229m4.0[39m [38;5;229mKB[39m [38;5;36mWed Oct 26 18:49:36 2022[39m [38;5;4m[1m themes[0m/
+[38;5;2m[1m.[0m[38;5;2mr[39m[38;5;3mw[39m[38;5;1mx[39m[38;5;2mr[39m[38;5;3mw[39m[38;5;1mx[39m[38;5;2mr[39m[38;5;245m-[39m[38;5;1mx[39m[38;5;6m[39m [38;5;230mdamet[39m [38;5;187mdamet[39m [38;5;229m726[39m [38;5;229mB[39m  [38;5;36mWed Oct 26 18:49:36 2022[39m [38;5;2m[1m powermenu_alt[0m*
+.[38;5;2mr[39m[38;5;3mw[39m[38;5;245m-[39m[38;5;2mr[39m[38;5;3mw[39m[38;5;245m-[39m[38;5;2mr[39m[38;5;245m-[39m[38;5;245m-[39m[38;5;6m[39m [38;5;230mdamet[39m [38;5;187mdamet[39m [38;5;229m3.6[39m [38;5;229mKB[39m [38;5;36mWed Oct 26 18:49:36 2022[39m  spotify_status.py
+[1m[7m%[27m[1m[0m                                                                                                       [0m[27m[24m[J
+[38;2;154;52;142mdamet[0m[38;2;154;52;142m [0m[38;2;218;98;125m [0m[38;2;218;98;125m…/dotfiles/polybar/scripts[0m[38;2;218;98;125m [0m[38;2;252;161;125m [0m[38;2;252;161;125m[0m[38;2;252;161;125m [0m[38;2;252;161;125mmain[0m[38;2;252;161;125m [0m[38;2;252;161;125m✘[0m[38;2;252;161;125m![0m[38;2;252;161;125m?[0m[38;2;252;161;125m [0mvia [1;33m [0m[1;33mpyenv [0m[38;2;51;101;138m ♥ [0m[38;2;51;101;138m13:02[0m[38;2;51;101;138m [0m [K[?1h[?2004h[1m[31mm[0m[39m[0m[32mm[32mv[39m [4m.[
