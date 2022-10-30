@@ -76,7 +76,7 @@ local terminal    = "kitty"
 -- awesome variables
 awful.util.terminal = terminal
 -- Tagnames are relying on Font Awesome Free Pack
-awful.util.tagnames = { " ", " ", " ", " 0 ", " 0 ", " 0 ", " 0 ", " ﭮ", "阮 " }
+awful.util.tagnames = { " ", " ", " ", "", " ", "  ", " ", " ﭮ", "阮 " }
 awful.layout.suit.tile.left.mirror = true
 awful.layout.layouts = {
   awful.layout.suit.tile,
