@@ -7,6 +7,10 @@
 - Terminal - [kitty](https://sw.kovidgoyal.net/kitty/)
 - Compositor - [picom](https://github.com/yshui/picom)
 
+- Icon theme - [Nordzy-icon](https://www.xfce-look.org/p/1686927/)
+- Cursor theme - [Capitaine Cursors](https://www.xfce-look.org/p/1818760/)
+- GTK theme - [Nordic](https://www.xfce-look.org/p/1267246/)
+
 <!-- repo de temas de kitty https://github.com/dexpota/kitty-themes.git -->
 
 ### Screenshots
