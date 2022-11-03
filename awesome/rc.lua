@@ -69,14 +69,14 @@ local modkey1 = "Control"
 -- personal variables
 local browser     = "google-chrome"
 local editor      = os.getenv("EDITOR") or "nvim"
-local editorgui   = "geany"
+local editorgui   = "ode"
 local filemanager = "thunar"
 local terminal    = "kitty"
 
 -- awesome variables
 awful.util.terminal = terminal
 -- Tagnames are relying on Font Awesome Free Pack
-awful.util.tagnames = { " ", " ", " ", "", " ", "  ", " ", " ﭮ", "阮 " }
+awful.util.tagnames = { " 1 ", " 2 ", " 3 ", " 4 ", " 5 ", " 6 ", " 7 ", " 8 ", " 9 " }
 awful.layout.suit.tile.left.mirror = true
 awful.layout.layouts = {
   awful.layout.suit.tile,
@@ -266,12 +266,7 @@ globalkeys = my_table.join(
 
   -- Show/Hide Wibox
   awful.key({ modkey, "Shift" }, "h", function()
-    for s in screen do
-      s.mywibox.visible = not s.mywibox.visible
-      if s.mybottomwibox then
-        s.mybottomwibox.visible = not s.mybottomwibox.visible
-      end
-    end
+    awful.util.spawn("/home/damet/.config/rofi/powermenu_alt")
   end,
     { description = "toggle wibox", group = "awesome" }),
 
@@ -641,3 +636,4 @@ awful.spawn.with_shell("nm-applet")
 awful.spawn.with_shell("xfsettingsd")
 awful.spawn.with_shell("xfce4-power-manager")
 awful.spawn.with_shell("greenclip daemon")
+awful.spawn.with_shell("/home/damet/dotfiles/polybar/launch.sh")

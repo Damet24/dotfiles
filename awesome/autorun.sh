@@ -23,10 +23,8 @@ fi
 
 run xfsettingsd
 run nm-applet
-run light-locker
 run xcape -e 'Super_L=Super_L|Control_L|Escape'
 run thunar --daemon
-run pamac-tray
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 
 ## The following are not included in minimal edition by default
@@ -37,4 +35,3 @@ if (command -v system-config-printer-applet && ! pgrep applet.py ); then
 fi
 
 run blueman-applet
-run msm_notifier

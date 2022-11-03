@@ -13,15 +13,15 @@ local wibox = require("wibox")
 local math, string, os = math, string, os
 local my_table = awful.util.table or gears.table -- 4.{0,1} compatibility
 
-bg =        '#282c34'
-fg =      '#abb2bf'
-red =       '#e06c75'
-green =     '#98c379'
-yellow =    '#e5c07b'
-blue =      '#61afef'
-magenta =   '#c678dd'
-cyan =      '#56b6c2'
-gray =      '#434956'
+bg = '#282c34'
+fg = '#abb2bf'
+red = '#e06c75'
+green = '#98c379'
+yellow = '#e5c07b'
+blue = '#61afef'
+magenta = '#c678dd'
+cyan = '#56b6c2'
+gray = '#434956'
 
 local theme                                     = {}
 theme.dir                                       = os.getenv("HOME") .. "/.config/awesome/themes/powerarrow-blue"
@@ -104,7 +104,7 @@ theme.titlebar_maximized_button_normal_active   = theme.dir .. "/icons/titlebar/
 theme.titlebar_maximized_button_focus_inactive  = theme.dir .. "/icons/titlebar/maximized_focus_inactive.png"
 theme.titlebar_maximized_button_normal_inactive = theme.dir .. "/icons/titlebar/maximized_normal_inactive.png"
 theme.bg_systray                                = bg
-theme.clock_fontfg                              = "#8c8c8b"
+theme.clock_fontfg                              = fg
 theme.clock_font                                = "Iosevka NF"
 
 local markup = lain.util.markup
@@ -124,7 +124,7 @@ theme.cal = lain.widget.cal({
   attach_to = { clock },
   notification_preset = {
     font = "Iosevka NF 10",
-    fg   = theme.border_focus,
+    fg   = theme.fg_normal,
     bg   = theme.bg_normal
   }
 })
@@ -188,7 +188,23 @@ local temp = lain.widget.temp({
     widget:set_markup(markup.font(theme.font, " " .. coretemp_now .. "°C "))
   end
 })
+
+-- audio
+local volume = lain.widget.pulsebar({
+  settings = function()
+    widget:set_markup("uwu")
+  end
+})
+
+-- battery
+local battery = lain.widget.bat({
+  timeout = 10,
+  settings = function()
+    widget:set_markup(markup.fontfg(theme.font, blue, " " .. bat_now.perc .. "% "))
+  end
+})
 --]]
+
 local tempicon = wibox.widget.imagebox(theme.widget_temp)
 
 -- ALSA volume
@@ -270,57 +286,71 @@ function theme.at_screen_connect(s)
 
   end
 
-  s.mywibox = awful.wibar({ position = "top", screen = s, shape = custom_shape, height = 35, width = 1850,
-    border_width = 5, bg = theme.bg_normal, fg = theme.fg_magenta })
-
-  tbox_separator = wibox.widget.textbox(" | ")
-
-  local vert_sep = wibox.widget {
-    widget = wibox.widget.separator,
-    orientation = "horizontal",
-    forced_width = 10,
-    color = "#6200C4",
-  }
-
-  local fedora_logo = wibox.widget {
-    widget = wibox.widget.textbox,
-    text = "linux",
-    font = "Font Awesome 6 Brands Regular 18"
-  }
+  -- s.mywibox = awful.wibar({ position = "top", screen = s, shape = custom_shape, height = 35, width = 1850,
+  --   border_width = 10, bg = theme.bg_normal, fg = theme.fg_magenta })
+  --
+  -- tbox_separator = wibox.widget.textbox(" | ")
+  --
+  -- local vert_sep = wibox.widget {
+  --   widget = wibox.widget.separator,
+  --   orientation = "horizontal",
+  --   forced_width = 10,
+  --   color = "#6200C4",
+  -- }
+  --
+  -- local fedora_logo = wibox.widget {
+  --   widget = wibox.widget.textbox,
+  --   text = " ",
+  --   font = "Iosevka NF Regular 18"
+  -- }
 
   -- Add widgets to the wibox
-  s.mywibox:setup {
-    layout = wibox.layout.align.horizontal,
-    { -- Left widgets
-      layout = wibox.layout.fixed.horizontal,
-      --spr,
-      wibox.container.background(wibox.container.margin(fedora_logo, 20, 15, 2, 5)),
-      vert_sep,
-      wibox.container.background(wibox.container.margin(clock, 6, 0, 2, 2)),
-      s.mypromptbox,
-      spr,
-    },
-    {
-      layout = wibox.layout.align.horizontal,
-      wibox.container.background(wibox.container.margin(s.mytaglist, 530, 0, 2, 2)),
-    },
-    -- s.mytasklist, -- Middle widget
-    { -- Right widgets
-      layout = wibox.layout.fixed.horizontal,
-      wibox.container.background(wibox.container.margin(wibox.widget { theme.volume.widget,
-        layout = wibox.layout.align.horizontal }, 2, 3)),
-      vert_sep,
-      wibox.container.background(wibox.container.margin(wibox.widget { mem.widget, layout = wibox.layout.align.horizontal }
-        , 2, 3)),
-      vert_sep,
-      wibox.container.background(wibox.container.margin(wibox.widget { temp.widget,
-        layout = wibox.layout.align.horizontal }, 4, 4)),
-      vert_sep,
-      wibox.container.background(wibox.container.margin(wibox.widget.systray { layout = wibox.layout.align.horizontal },
-        8, 4)),
-      -- s.mylayoutbox,
-    },
-  }
+  -- s.mywibox:setup {
+  --   layout = wibox.layout.align.horizontal,
+  --   { -- Left widgets
+  --     layout = wibox.layout.fixed.horizontal,
+  --     --spr,
+  --     wibox.container.background(wibox.container.margin(fedora_logo, 20, 15, 2, 5)),
+  --     -- vert_sep,
+  --     s.mypromptbox,
+  --     -- spr,
+  --   },
+  --   -- s.mytasklist, -- Middle widget
+  --   {
+  --     layout = wibox.layout.align.horizontal,
+  --     wibox.container.background(wibox.container.margin(s.mytaglist, 530, 0, 2, 2)),
+  --   },
+  --   { -- Right widgets
+  --     layout = wibox.layout.fixed.horizontal,
+  --
+  --     -- wibox.container.background(wibox.container.margin(wibox.widget { theme.volume.widget,
+  --     --   layout = wibox.layout.align.horizontal }, 2, 3)),
+  --
+  --     -- vert_sep,
+  --
+  --     -- wibox.container.background(wibox.container.margin(wibox.widget { mem.widget, layout = wibox.layout.align.horizontal }
+  --     --   , 2, 3)),
+  --
+  --     -- vert_sep,
+  --
+  --     -- wibox.container.background(wibox.container.margin(wibox.widget { temp.widget,
+  --     --   layout = wibox.layout.align.horizontal }, 4, 4)),
+  --
+  --     wibox.container.background(wibox.container.margin(wibox.widget { battery.widget,
+  --       layout = wibox.layout.align.horizontal }, 4, 4)),
+  --
+  --     wibox.container.background(wibox.container.margin(wibox.widget { volume.widget,
+  --       layout = wibox.layout.align.horizontal }, 4, 4)),
+  --
+  --     wibox.container.background(wibox.container.margin(clock, 6, 0, 2, 2)),
+  --
+  --
+  --     -- vert_sep,
+  --     wibox.container.background(wibox.container.margin(wibox.widget.systray { layout = wibox.layout.align.horizontal },
+  --       8, 4)),
+  --     -- s.mylayoutbox,
+  --   },
+  -- }
 end
 
 return theme
