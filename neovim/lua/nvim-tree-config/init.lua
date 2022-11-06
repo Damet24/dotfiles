@@ -14,5 +14,11 @@ require("nvim-tree").setup({
         none = " ",
       }
     }
+  },
+  git = {
+    enable = true,
+    ignore = false,
+    show_on_dirs = true,
+    timeout = 400,
   }
 })
