@@ -4,7 +4,7 @@
 - WM - [AwesomeWM](https://awesomewm.org/)
 - Editor - [Neovim](https://neovim.io/)
 - SHell - [zsh](https://www.zsh.org/)
-- Terminal - [kitty](https://sw.kovidgoyal.net/kitty/)
+- Terminal - [Wezterm](https://sw.kovidgoyal.net/kitty/)
 - Compositor - [picom](https://github.com/yshui/picom)
 
 - Icon theme - [Nordzy-icon](https://www.xfce-look.org/p/1686927/)
