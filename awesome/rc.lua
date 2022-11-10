@@ -71,7 +71,7 @@ local browser     = "google-chrome"
 local editor      = os.getenv("EDITOR") or "nvim"
 local editorgui   = "ode"
 local filemanager = "thunar"
-local terminal    = "kitty"
+local terminal    = "wezterm"
 
 -- awesome variables
 awful.util.terminal = terminal
