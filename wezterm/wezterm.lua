@@ -8,7 +8,7 @@ return {
     colors = {
         foreground = '#abb2bf',
         tab_bar = {
-            background = '#0b0022',
+            background = 'rgba(30,33,39,95%)',
 
             active_tab = {
                 bg_color = 'rgba(40,44,52,1)',
