@@ -52,6 +52,6 @@ return {
         inactive_titlebar_bg = 'rgba(30,33,39,95%)',
     },
 
-    window_background_opacity = 0.95,
+    window_background_opacity = 0.97,
     hide_tab_bar_if_only_one_tab = true,
 }

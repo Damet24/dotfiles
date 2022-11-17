@@ -28,6 +28,7 @@ alias ls='lsd --group-dirs=first'
 alias v='/bin/nvim'
 alias vim='/bin/nvim'
 alias nvim='/bin/nvim'
+alias py='/usr/bin/python3'
 
 alias dsa='docker stop $(docker ps -q)'
 alias lamp='~/.scripts/start_lamp_server.sh'
