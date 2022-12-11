@@ -126,7 +126,7 @@ end)
 volume:connect_signal("property::value", function(_, new_value)
     volume_text.markup = helpers.colorize_text(new_value .. "%", beautiful.fg_color)
     volume.value = new_value
-    awful.spawn("amixer -D pulse set Master " .. "100" .."%", false)
+    awful.spawn("amixer -D pulse set Master " .. new_value .."%", false)
 end)
 
 

@@ -16,15 +16,15 @@ local profile_image = wibox.widget {
     {
         image = beautiful.images.profile,
         -- clip_shape = gears.shape.circle,
-        forced_height = dpi(75),
-        forced_width = dpi(75),
+        forced_width = dpi(900),
+        forced_height = dpi(900),
         widget = wibox.widget.imagebox
     },
-    widget = wibox.container.background,
-    -- border_width = dpi(1),
-    forced_width = dpi(75),
-    forced_height = dpi(75),
-    -- shape = gears.shape.circle,
+    widget = wibox.container.margin,
+    border_width = dpi(1),
+    forced_width = dpi(90),
+    forced_height = dpi(90),
+    shape = gears.shape.circle,
     border_color = beautiful.fg_color
 }
 
