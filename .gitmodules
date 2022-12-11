@@ -1,3 +1,6 @@
 [submodule "awesome/awesomeOD-wm-widgets"]
 	path = awesome/awesomeOD-wm-widgets
 	url = https://github.com/streetturtle/awesome-wm-widgets
+[submodule "awesome/mods/rubato"]
+	path = awesome/mods/rubato
+	url = https://github.com/andOrlando/rubato.git

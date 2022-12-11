@@ -154,7 +154,7 @@ local screen_height = s.geometry.height
     local clock = wibox.widget{
         {
             widget = wibox.widget.textclock,
-            format = "%I",
+            format = "%H",
             font = beautiful.font_var .. "Bold 12",
             valign = "center",
             align = "center"
@@ -171,9 +171,6 @@ local screen_height = s.geometry.height
     }
     -- Eo clock
     ------------------------------------------
-
-
-
 
     -- update widgets accordingly
     -- ~~~~~~~~~~~~~~~~~~~~~~~~~~
