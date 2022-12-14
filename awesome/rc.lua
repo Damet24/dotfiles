@@ -301,7 +301,7 @@ awful.screen.connect_for_each_screen(function(s)
     local datetime = wibox.widget {
         {
             widget = wibox.widget.textclock,
-            format = "%I",
+            format = "%H",
             font = beautiful.font_var .. "Bold 16",
             valign = "center",
             align = "center"
@@ -313,13 +313,6 @@ awful.screen.connect_for_each_screen(function(s)
             valign = "center",
             align = "center"
         },
-        -- {
-        --     widget = wibox.widget.textclock,
-        --     format = "%b %d, %Y",
-        --     font = beautiful.font_var .. "Regular 14",
-        --     valign = "center",
-        --     align = "center"
-        -- },
         layout = wibox.layout.fixed.vertical,
         spacing = dpi(3)
     }

@@ -6,17 +6,13 @@ local gears = require("gears")
 local dpi = beautiful.xresources.apply_dpi
 local helpers = require("helpers")
 local wibox = require("wibox")
-
-
-
-
-
+local naughty = require('naughty')
 
 -- widgets
 -- ~~~~~~~
 
 -- progressbar
-local brightness = wibox.widget{
+local brightness = wibox.widget {
     widget = wibox.widget.slider,
     value = 50,
     maximum = 100,
@@ -33,15 +29,17 @@ local brightness = wibox.widget{
     handle_border_color = beautiful.bg_3
 }
 
-local brightness_icon = wibox.widget{
+local brightness_icon = wibox.widget {
     widget = wibox.widget.textbox,
-    markup = helpers.colorize_text("", beautiful.fg_color),
-    font = beautiful.icon_var .. "17",
+    -- markup = helpers.colorize_text("", beautiful.fg_color),
+    markup = helpers.colorize_text(" ", beautiful.fg_color),
+    font = "Iosevka NF 17",
+    -- font = beautiful.icon_alt_var .. "17",
     align = "center",
     valign = "center"
 }
 
-local brightness_text = wibox.widget{
+local brightness_text = wibox.widget {
     widget = wibox.widget.textbox,
     markup = helpers.colorize_text("10%", beautiful.fg_color),
     font = beautiful.font_var .. "13",
@@ -49,7 +47,7 @@ local brightness_text = wibox.widget{
     valign = "center"
 }
 
-local bright_init = wibox.widget{
+local bright_init = wibox.widget {
     brightness_icon,
     brightness,
     brightness_text,
@@ -58,24 +56,21 @@ local bright_init = wibox.widget{
     spacing = dpi(17)
 }
 
-awful.spawn.easy_async_with_shell("brightnessctl | grep -i  'current' | awk '{ print $4}' | tr -d \"(%)\"", function (stdout)
-    local value = string.gsub(stdout, '^%s*(.-)%s*$', '%1')
-    brightness.value = tonumber(value)
-    brightness_text.markup = helpers.colorize_text(value .. "%", beautiful.fg_color)
-end)
+awful.spawn.easy_async_with_shell("brightnessctl | grep -i  'current' | awk '{ print $4}' | tr -d \"(%)\"",
+    function(stdout)
+        local value = string.gsub(stdout, '^%s*(.-)%s*$', '%1')
+        brightness.value = tonumber(value)
+        brightness_text.markup = helpers.colorize_text(value .. "%", beautiful.fg_color)
+    end)
 
-brightness:connect_signal("property::value", function(_, new_value)
-    brightness_text.markup = helpers.colorize_text(new_value .. "%", beautiful.fg_color)
-    brightness.value = new_value
-    awful.spawn("brightnessctl set " .. new_value .."%", false)
-end)
-
-
-
-
+-- brightness:connect_signal("property::value", function(_, new_value)
+--     brightness_text.markup = helpers.colorize_text(new_value .. "%", beautiful.fg_color)
+--     brightness.value = new_value
+--     awful.spawn("brightnessctl set " .. new_value .."%", false)
+-- end)
 
 -- volume
-local volume = wibox.widget{
+local volume = wibox.widget {
     widget = wibox.widget.slider,
     value = 50,
     maximum = 100,
@@ -92,7 +87,7 @@ local volume = wibox.widget{
     handle_border_color = beautiful.bg_3
 }
 
-local volume_icon = wibox.widget{
+local volume_icon = wibox.widget {
     widget = wibox.widget.textbox,
     markup = helpers.colorize_text("", beautiful.fg_color),
     font = beautiful.icon_var .. "17",
@@ -100,7 +95,7 @@ local volume_icon = wibox.widget{
     valign = "center"
 }
 
-local volume_text = wibox.widget{
+local volume_text = wibox.widget {
     widget = wibox.widget.textbox,
     markup = helpers.colorize_text("0%", beautiful.fg_color),
     font = beautiful.font_var .. "13",
@@ -108,7 +103,7 @@ local volume_text = wibox.widget{
     valign = "center"
 }
 
-local volume_init = wibox.widget{
+local volume_init = wibox.widget {
     volume_icon,
     volume,
     volume_text,
@@ -117,26 +112,26 @@ local volume_init = wibox.widget{
     spacing = dpi(17)
 }
 
-awful.spawn.easy_async_with_shell("amixer -D pulse get Master | tail -n 1 | awk '{print $5}' | tr -d '[%]'", function (stdout)
-    local value = string.gsub(stdout, '^%s*(.-)%s*$', '%1')
-    volume.value = tonumber(value)
-    volume_text.markup = helpers.colorize_text(value .. "%", beautiful.fg_color)
-end)
+awful.spawn.easy_async_with_shell("amixer -D pulse get Master | tail -n 1 | awk '{print $5}' | tr -d '[%]'",
+    function(stdout)
+        local value = string.gsub(stdout, '^%s*(.-)%s*$', '%1')
+        volume.value = tonumber(value)
+        volume_text.markup = helpers.colorize_text(value .. "%", beautiful.fg_color)
+    end)
 
 volume:connect_signal("property::value", function(_, new_value)
-    volume_text.markup = helpers.colorize_text(new_value .. "%", beautiful.fg_color)
-    volume.value = new_value
-    awful.spawn("amixer -D pulse set Master " .. new_value .."%", false)
+    volume_text.markup = helpers.colorize_text("69" .. "%", beautiful.fg_color)
+    volume.value = 69
+    awful.spawn("amixer -D pulse set Master " .. "100" .."%", false)
 end)
 
-
-return wibox.widget{
+return wibox.widget {
     {
         {
             bright_init,
             volume_init,
             spacing = dpi(12),
-            layout = wibox.layout.fixed.vertical,
+            layout = wibox.layout.fixed.vertical
         },
         margins = 12,
         widget = wibox.container.margin

@@ -22,9 +22,9 @@ local wibox = require("wibox")
 -- album art
 local album_art = wibox.widget{
     widget = wibox.widget.imagebox,
-    clip_shape = helpers.rrect(beautiful.rounded),
-    forced_height = dpi(85),
-    forced_width = dpi(85),
+    -- clip_shape = helpers.rrect(beautiful.rounded),
+    -- forced_height = dpi(85),
+    -- forced_width = dpi(85),
     image = beautiful.images.album_art,
     border_color = beautiful.fg_color .. "33",
     border_width = dpi(1)
@@ -89,54 +89,49 @@ local prev_button = wibox.widget{
 -- update widgets
 -- ~~~~~~~~~~~~~~
 
-local playerctl = require("mods.bling").signal.playerctl.lib()
+-- local playerctl = require("mods.bling").signal.playerctl.lib()
 
 
-local toggle_command = function() playerctl:play_pause() end
-local prev_command = function() playerctl:previous() end
-local next_command = function() playerctl:next() end
+-- local toggle_command = function() playerctl:play_pause() end
+-- local prev_command = function() playerctl:previous() end
+-- local next_command = function() playerctl:next() end
 
-toggle_button:buttons(gears.table.join(
-    awful.button({}, 1, function() toggle_command() end)))
+-- toggle_button:buttons(gears.table.join(
+--     awful.button({}, 1, function() toggle_command() end)))
 
-next_button:buttons(gears.table.join(
-    awful.button({}, 1, function() next_command() end)))
+-- next_button:buttons(gears.table.join(
+--     awful.button({}, 1, function() next_command() end)))
 
-prev_button:buttons(gears.table.join(
-    awful.button({}, 1, function() prev_command() end)))
-
-
-playerctl:connect_signal("metadata", function(_, title, artist, album_path, __, ___, ____)
-	if title == "" then
-		title = "None"
-	end
-	if artist == "" then
-		artist = "Unknown"
-	end
-	if album_path == "" then
-		album_path = beautiful.images.album_art
-	end
-
-	album_art:set_image(gears.surface.load_uncached(album_path))
-    song_name:set_markup_silently(helpers.colorize_text(title, beautiful.fg_color))
-	song_artist:set_markup_silently(helpers.colorize_text(artist, beautiful.fg_color))
+-- prev_button:buttons(gears.table.join(
+--     awful.button({}, 1, function() prev_command() end)))
 
 
-end)
+-- playerctl:connect_signal("metadata", function(_, title, artist, album_path, __, ___, ____)
+-- 	if title == "" then
+-- 		title = "None"
+-- 	end
+-- 	if artist == "" then
+-- 		artist = "Unknown"
+-- 	end
+-- 	if album_path == "" then
+-- 		album_path = beautiful.images.album_art
+-- 	end
 
-playerctl:connect_signal("playback_status", function(_, playing, __)
-	if playing then
-        toggle_button.markup = helpers.colorize_text("", beautiful.fg_color)
-	else
-        toggle_button.markup = helpers.colorize_text("", beautiful.fg_color)
-	end
-end)
+	-- album_art:set_image(gears.surface.load_uncached(album_path))
+--     song_name:set_markup_silently(helpers.colorize_text(title, beautiful.fg_color))
+-- 	song_artist:set_markup_silently(helpers.colorize_text(artist, beautiful.fg_color))
 
 
+-- end)
 
-
-
-
+album_art:set_image(gears.surface.load_uncached(beautiful.images.profile))
+-- playerctl:connect_signal("playback_status", function(_, playing, __)
+-- 	if playing then
+--         toggle_button.markup = helpers.colorize_text("", beautiful.fg_color)
+-- 	else
+--         toggle_button.markup = helpers.colorize_text("", beautiful.fg_color)
+-- 	end
+-- end)
 
 
 

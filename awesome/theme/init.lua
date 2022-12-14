@@ -55,7 +55,6 @@ theme.accent_2              = colors.accent_2
 theme.accent_3              = colors.accent_3
 
 
-
 -- font vars
 theme.font_var      = ui_vars.font .. " "
 theme.icon_var      = "Material Icons Round "

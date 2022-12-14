@@ -1,7 +1,5 @@
 -- Minimal control center
 -- ~~~~~~~~~~~~~~~~~~~~~
-
-
 -- requirements
 -- ~~~~~~~~~~~~
 local awful = require("awful")
@@ -13,8 +11,6 @@ local gears = require("gears")
 local rubato = require("mods.rubato")
 local readwrite = require("misc.scripts.read_writer")
 
-
-
 --[[ few stuffs to note
 
 -- sidebar height (extras disabled)
@@ -25,12 +21,10 @@ local readwrite = require("misc.scripts.read_writer")
 
 ]]
 
-
-
 awful.screen.connect_for_each_screen(function(s)
 
     -- Mainbox
-    --~~~~~~~~~~~~~~~~~
+    -- ~~~~~~~~~~~~~~~~~
     control_c = wibox({
         type = "dock",
         shape = helpers.rrect(beautiful.rounded),
@@ -41,43 +35,41 @@ awful.screen.connect_for_each_screen(function(s)
         ontop = true,
         visible = false
     })
-    --~~~~~~~~~~~~~~~
-
-
+    -- ~~~~~~~~~~~~~~~
 
     -- widgets
-    --~~~~~~~~
+    -- ~~~~~~~~
     local profile = require("layout.controlCenter.profile")
     local sessions = require("layout.controlCenter.sessionctl")
     local sliders = require("layout.controlCenter.sliders")
-    -- local song = require("layout.controlCenter.music")
+    local song = require("layout.controlCenter.music")
     local services = require("layout.controlCenter.services")
     -- local statusline = require("layout.controlCenter.statusbar")
 
-
+    local spotify = require('awesome-wm-widgets.spotify-widget.spotify')
 
     -- animations
     --------------
-    local slide_right = rubato.timed{
+    local slide_right = rubato.timed {
         pos = s.geometry.height,
         rate = 60,
         intro = 0.14,
         duration = 0.33,
-        subscribed = function(pos) control_c.y = s.geometry.y + pos end
+        subscribed = function(pos)
+            control_c.y = s.geometry.y + pos
+        end
     }
-
 
     local slide_end = gears.timer({
         single_shot = true,
         timeout = 0.33 + 0.08,
         callback = function()
             control_c.visible = false
-        end,
+        end
     })
 
-
     -- toggler script
-    --~~~~~~~~~~~~~~~
+    -- ~~~~~~~~~~~~~~~
     local screen_backup = 1
 
     cc_toggle = function(screen)
@@ -112,10 +104,7 @@ awful.screen.connect_for_each_screen(function(s)
         screen_backup = screen.index
     end
     -- Eof toggler script
-    --~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-
+    -- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
     -- function to show/hide extra buttons
     -- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -132,10 +121,28 @@ awful.screen.connect_for_each_screen(function(s)
         slide_right.target = s.geometry.height - (control_c.height + beautiful.useless_gap * 2)
     end
 
-
+    local uwu = wibox.widget {
+        {
+            {
+                forced_height = 40,
+                forced_widght = 40,
+                widget = wibox.widget.imagebox,
+                image = beautiful.images.profile,
+                -- spacing = dpi(12),
+                layout = wibox.layout.fixed.horizontal
+            },
+            margins = 1,
+            widget = wibox.container.margin
+        },
+        widget = wibox.container.background,
+        forced_height = dpi(120),
+        bg = beautiful.bg_3 .. "99",
+        border_color = beautiful.fg_color .. "33",
+        shape = helpers.rrect(beautiful.rounded)
+    }
 
     -- Initial setup
-    control_c:setup {
+    control_c:setup{
         {
             {
                 {
@@ -145,8 +152,9 @@ awful.screen.connect_for_each_screen(function(s)
                     layout = wibox.layout.align.horizontal
                 },
                 sliders,
-                -- song,
+                song,
                 services,
+                -- uwu,
                 layout = wibox.layout.fixed.vertical,
                 spacing = dpi(24)
             },
@@ -154,15 +162,17 @@ awful.screen.connect_for_each_screen(function(s)
             margins = dpi(20)
         },
         {
-            -- statusline,
+            wibox.widget.systray(),
             nil,
-            margins = {left = dpi(20), right = dpi(20), bottom = dpi(0)},
-            widget = wibox.container.margin,
+            margins = {
+                left = dpi(20),
+                right = dpi(20),
+                bottom = dpi(0)
+            },
+            widget = wibox.container.margin
         },
-        layout = wibox.layout.fixed.vertical,
+        layout = wibox.layout.fixed.vertical
     }
-
-
 
     -- reload cc state on reload or startup
     ---------------------------------------
@@ -176,6 +186,5 @@ awful.screen.connect_for_each_screen(function(s)
         control_c.height = dpi(580)
     end
     --------------------------------------------------------
-        
 
 end)

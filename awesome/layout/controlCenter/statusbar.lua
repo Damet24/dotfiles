@@ -20,7 +20,9 @@ local bat_icon = wibox.widget{
     font = beautiful.icon_var .. "11",
     align = "center",
     valign = "center",
-    widget = wibox.widget.textbox
+    widget = wibox.widget.textbox,
+    
+ layout = wibox.layout.fixed.horizontal
 }
 
 -- battery progressbar
@@ -78,7 +80,7 @@ local battery = wibox.widget{
             spacing = dpi(1)
         },
         widget = wibox.container.margin,
-        margins = {top = dpi(11),bottom = dpi(11)}
+        margins = 11,
     },
     bat_txt,
     layout = wibox.layout.fixed.horizontal,

@@ -7,6 +7,7 @@ return require 'packer'.startup(function()
     use 'navarasu/onedark.nvim'
     use 'folke/tokyonight.nvim'
     use 'patstockwell/vim-monokai-tasty'
+    use 'RRethy/nvim-base16'
 
     use 'glepnir/dashboard-nvim'
 
