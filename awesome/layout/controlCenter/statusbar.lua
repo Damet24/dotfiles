@@ -154,7 +154,11 @@ return wibox.widget{
             spacing = dpi(15)
         },
         extras,
-        battery,
+    {
+      wibox.widget.systray(),
+      widget = wibox.container.margin,
+      layout = wibox.layout.align.horizontal,
+    },
         layout = wibox.layout.align.horizontal
     },
     layout = wibox.layout.fixed.vertical,

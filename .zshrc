@@ -14,6 +14,9 @@ export NVM_DIR="$HOME/.nvm"
 
 export PATH="$HOME/.local/bin:$PATH"
 
+ export DENO_INSTALL="/$HOME/.deno"
+ export PATH="$DENO_INSTALL/bin:$PATH"
+
 # CUSTOM
 
 alias cat='/bin/bat'

@@ -122,7 +122,7 @@ awful.spawn.easy_async_with_shell("amixer -D pulse get Master | tail -n 1 | awk 
 volume:connect_signal("property::value", function(_, new_value)
     volume_text.markup = helpers.colorize_text("69" .. "%", beautiful.fg_color)
     volume.value = 69
-    awful.spawn("amixer -D pulse set Master " .. "100" .."%", false)
+    awful.spawn("amixer -D pulse set Master " .. new_value .."%", false)
 end)
 
 return wibox.widget {

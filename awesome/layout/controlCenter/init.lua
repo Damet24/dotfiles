@@ -46,8 +46,6 @@ awful.screen.connect_for_each_screen(function(s)
     local services = require("layout.controlCenter.services")
     -- local statusline = require("layout.controlCenter.statusbar")
 
-    local spotify = require('awesome-wm-widgets.spotify-widget.spotify')
-
     -- animations
     --------------
     local slide_right = rubato.timed {
@@ -154,7 +152,6 @@ awful.screen.connect_for_each_screen(function(s)
                 sliders,
                 song,
                 services,
-                -- uwu,
                 layout = wibox.layout.fixed.vertical,
                 spacing = dpi(24)
             },
@@ -162,7 +159,7 @@ awful.screen.connect_for_each_screen(function(s)
             margins = dpi(20)
         },
         {
-            wibox.widget.systray(),
+            -- statusline,
             nil,
             margins = {
                 left = dpi(20),

@@ -823,7 +823,7 @@ end)
 -- require('config')
 
 awful.spawn.with_shell("~/.config/awesome/autorun.sh")
-awful.spawn.with_shell("picom --config $HOME/.config/picom/picom.conf --experimental-backends")
+awful.spawn.with_shell("picom --config $HOME/.config/picom/picom.conf")
 awful.spawn.with_shell("nm-applet")
 awful.spawn.with_shell("blueman-applet")
 awful.spawn.with_shell("xfsettingsd")
