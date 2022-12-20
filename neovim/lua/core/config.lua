@@ -9,8 +9,8 @@ opt.cursorline = true
 opt.syntax = 'off'
 opt.expandtab = true
 opt.smarttab = true
-opt.shiftwidth = 4
-opt.tabstop = 4
+opt.shiftwidth = 2
+opt.tabstop = 2
 
 opt.fillchars = { eob = " " }
 opt.ignorecase = true
