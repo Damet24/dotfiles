@@ -824,6 +824,7 @@ end)
 
 awful.spawn.with_shell("~/.config/awesome/autorun.sh")
 awful.spawn.with_shell("picom --config $HOME/.config/picom/picom.conf")
+awful.spawn.with_shell('xinput --set-prop "Logitech G203 LIGHTSYNC Gaming Mouse" "libinput Accel Speed" -1')
 awful.spawn.with_shell("nm-applet")
 awful.spawn.with_shell("blueman-applet")
 awful.spawn.with_shell("xfsettingsd")
