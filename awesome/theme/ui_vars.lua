@@ -7,7 +7,7 @@
 
 return {
 
-    font                = "Iosevka NF",
+    font                = "JetBrainsMono NF",
     titlebar_position   = "bottom",
     gaps                = 10,
     border_width        = 0,

@@ -232,12 +232,12 @@ awful.screen.connect_for_each_screen(function(s)
                     {
                         id = "text_role",
                         widget = wibox.widget.textbox,
-                        font = beautiful.font_var .. "10",
+                        font = beautiful.font_var .. "8",
                         align = "center",
                         markup = "DD",
                         valign = "center"
                     },
-                    margins = dpi(8),
+                    margins = dpi(4),
                     widget = wibox.container.margin
                 },
                 widget = wibox.container.background
@@ -302,14 +302,14 @@ awful.screen.connect_for_each_screen(function(s)
         {
             widget = wibox.widget.textclock,
             format = "%H",
-            font = beautiful.font_var .. "Bold 16",
+            font = beautiful.font_var .. "Bold 14",
             valign = "center",
             align = "center"
         },
         {
             widget = wibox.widget.textclock,
             format = "%M",
-            font = beautiful.font_var .. "Regular 16",
+            font = beautiful.font_var .. "Regular 14",
             valign = "center",
             align = "center"
         },
