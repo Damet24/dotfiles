@@ -1,6 +1,3 @@
--- This file can be loaded by calling `lua require('plugins')` from your init.vim
--- Only required if you have packer configured as `opt`
--- vim.cmd [[packadd packer.nvim]]
 require('packer').startup(function(use)
   use 'wbthomason/packer.nvim' -- Package manager
 
@@ -60,6 +57,7 @@ require('packer').startup(function(use)
   end }
 end)
 
+-- load plugin config
 require('plugins.config.lsp')
 require('plugins.config.nvim-tree')
 require('plugins.config.ts')
