@@ -53,6 +53,11 @@ require('packer').startup(function(use)
 
   -- themes
   use 'Mofiqul/vscode.nvim'
+
+  -- virtual terminal
+  use { "akinsho/toggleterm.nvim", tag = '*', config = function()
+    require("toggleterm").setup()
+  end }
 end)
 
 require('plugins.config.lsp')
