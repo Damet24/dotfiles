@@ -1,4 +1,4 @@
-<h1 align="center">My DotFiles Config</h1>
+<h1 align="center">My linux Configs</h1>
 
 ### Genal
 
