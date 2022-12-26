@@ -51,6 +51,12 @@ require('packer').startup(function(use)
   -- themes
   use 'Mofiqul/vscode.nvim'
 
+  -- telescope
+  use {
+    'nvim-telescope/telescope.nvim', tag = '0.1.0',
+    requires = { { 'nvim-lua/plenary.nvim' } }
+  }
+
   -- virtual terminal
   use { "akinsho/toggleterm.nvim", tag = '*', config = function()
     require("toggleterm").setup()
@@ -64,3 +70,4 @@ require('plugins.config.ts')
 require("plugins.config.autopairs")
 require('plugins.config.n-ls')
 require('plugins.config.comment')
+require('plugins.config.telescope-config')
