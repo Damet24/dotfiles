@@ -5,11 +5,11 @@
  *******************************************************************************/
 
 * {
-    font:   "Iosevka NF 12";
+    font:   "JetBrainsMono NF 12";
 
-    bg0:    #282C34;
-    bg1:    #313640;
-    bg2:    #313640;
+    bg0:    #101012;
+    bg1:    #161719;
+    bg2:    #1e1e21;
     bg3:    #61AFEF;
     fg0:    #ABB2BF;
     fg1:    #ABB2BF;
@@ -30,7 +30,7 @@ window {
     y-offset:       -200;
     border-radius:  24px;
 
-    background-color:   #282C34;
+    background-color:   #101012;
 }
 
 mainbox {
