@@ -4,3 +4,6 @@
 [submodule "awesome/mods/rubato"]
 	path = awesome/mods/rubato
 	url = https://github.com/andOrlando/rubato.git
+[submodule "awesome/apw"]
+	path = awesome/apw
+	url = https://github.com/mokasin/apw
