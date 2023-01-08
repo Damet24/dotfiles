@@ -3,7 +3,6 @@ local wezterm = require 'wezterm'
 return {
     font = wezterm.font 'JetBrainsMono NF',
     font_size = 13,
-    -- color_scheme = "OneDark (Gogh)",
     color_scheme = "Framer (base16)",
 
     -- colors = {
