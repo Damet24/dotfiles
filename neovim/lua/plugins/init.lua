@@ -41,8 +41,6 @@ require('packer').startup(function(use)
   -- indents
   use 'lukas-reineke/indent-blankline.nvim'
 
-  -- null-ls
-  use 'jose-elias-alvarez/null-ls.nvim'
   use 'nvim-lua/plenary.nvim'
 
   -- nvim comment
@@ -61,6 +59,14 @@ require('packer').startup(function(use)
   use { "akinsho/toggleterm.nvim", tag = '*', config = function()
     require("toggleterm").setup()
   end }
+
+  -- git integrations
+  -- use 'airblade/vim-gitgutter'
+  use 'lewis6991/gitsigns.nvim'
+  use 'sindrets/diffview.nvim'
+
+  -- tmux navigation
+  use 'alexghergh/nvim-tmux-navigation'
 end)
 
 -- load plugin config
@@ -68,6 +74,7 @@ require('plugins.config.lsp')
 require('plugins.config.nvim-tree')
 require('plugins.config.ts')
 require("plugins.config.autopairs")
-require('plugins.config.n-ls')
 require('plugins.config.comment')
 require('plugins.config.telescope-config')
+require('plugins.config.git')
+require('plugins.config.navigation')
