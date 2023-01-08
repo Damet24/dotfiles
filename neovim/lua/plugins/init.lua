@@ -56,9 +56,7 @@ require('packer').startup(function(use)
   }
 
   -- virtual terminal
-  use { "akinsho/toggleterm.nvim", tag = '*', config = function()
-    require("toggleterm").setup()
-  end }
+  use 'akinsho/toggleterm.nvim'
 
   -- git integrations
   -- use 'airblade/vim-gitgutter'
@@ -78,3 +76,4 @@ require('plugins.config.comment')
 require('plugins.config.telescope-config')
 require('plugins.config.git')
 require('plugins.config.navigation')
+require('plugins.config.term')
