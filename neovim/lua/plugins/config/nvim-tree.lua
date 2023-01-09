@@ -16,3 +16,7 @@ require("nvim-tree").setup({
     dotfiles = true,
   },
 })
+
+map('n', '<C-n>', ':NvimTreeToggle<CR>', opts)
+map('n', '<leader>e', ':NvimTreeFocus<CR>', opts)
+

@@ -4,9 +4,10 @@ nvim_tmux_nav.setup {
   disable_when_zoomed = true -- defaults to false
 }
 
-vim.keymap.set('n', "<C-Left>", nvim_tmux_nav.NvimTmuxNavigateLeft)
-vim.keymap.set('n', "<C-Down>", nvim_tmux_nav.NvimTmuxNavigateDown)
-vim.keymap.set('n', "<C-Up>", nvim_tmux_nav.NvimTmuxNavigateUp)
-vim.keymap.set('n', "<C-Right>", nvim_tmux_nav.NvimTmuxNavigateRight)
-vim.keymap.set('n', "<C-\\>", nvim_tmux_nav.NvimTmuxNavigateLastActive)
--- vim.keymap.set('n', "<C-Space>", nvim_tmux_nav.NvimTmuxNavigateNext)
+require('utils')
+
+map("n", "<C-Left>", "<cmd>lua nvim_tmux_nav.NvimTmuxNavigateLeft()<CR>", opts)
+map("n", "<C-Down>", nvim_tmux_nav.NvimTmuxNavigateDown, opts)
+map("n", "<C-Up>", nvim_tmux_nav.NvimTmuxNavigateUp, opts)
+map("n", "<C-Right>", nvim_tmux_nav.NvimTmuxNavigateRight, opts)
+map("n", "<C-\\>", nvim_tmux_nav.NvimTmuxNavigateLastActive, opts)
