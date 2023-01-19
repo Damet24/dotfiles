@@ -134,7 +134,10 @@ menubar.utils.terminal = terminal -- Set the terminal for applications that requ
 -- }}}
 
 -- Keyboard map indicator and switcher
-mykeyboardlayout = awful.widget.keyboardlayout()
+mykeyboardlayout = wibox.widget {
+  widget = awful.widget.keyboardlayout,
+  horizontal = false
+}
 
 -- {{{ Wibar
 -- Create a textclock widget
@@ -385,6 +388,12 @@ awful.screen.connect_for_each_screen(function(s)
             margins = 2,
             spacing = dpi(20)
           },
+          -- {
+          --   mykeyboardlayout,
+          --   layout = wibox.container.rotate,
+          --   margins = 2,
+          --   spacing = dpi(20)
+          -- },
           datetime,
           layout = wibox.layout.fixed.vertical,
           margins = 2,
@@ -442,7 +451,7 @@ end, {
   }),
 
 
-  awful.key({  }, "XF86AudioRaiseVolume", function()
+  awful.key({}, "XF86AudioRaiseVolume", function()
     APW.Up()
   end, {
     description = "Up volume",
@@ -451,7 +460,7 @@ end, {
 
 
 
-  awful.key({  }, "XF86AudioLowerVolume", function()
+  awful.key({}, "XF86AudioLowerVolume", function()
     APW.Down()
   end, {
     description = "Down volume",
@@ -459,7 +468,7 @@ end, {
   }),
 
 
-  awful.key({  }, "XF86AudioMute", function()
+  awful.key({}, "XF86AudioMute", function()
     APW.ToggleMute()
   end, {
     description = "Mute voluem",
