@@ -6,7 +6,7 @@ return {
   -- color_scheme = "Framer (base16)",
   -- color_scheme = "Ashes (light) (terminal.sexy)",
   -- color_scheme = "Atelier Seaside Light (base16)",
-  color_scheme = "DoomOne",
+  -- color_scheme = "DoomOne",
   
 
   colors = {
