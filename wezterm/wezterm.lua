@@ -1,12 +1,16 @@
 local wezterm = require 'wezterm'
 
 return {
-    font = wezterm.font 'DaddyTimeMono NF',
-    font_size = 15,
-    color_scheme = "Framer (base16)",
+  font = wezterm.font 'DaddyTimeMono NF',
+  font_size = 15,
+  -- color_scheme = "Framer (base16)",
+  -- color_scheme = "Ashes (light) (terminal.sexy)",
+  -- color_scheme = "Atelier Seaside Light (base16)",
+  color_scheme = "DoomOne",
+  
 
-    -- colors = {
-    --     foreground = '#abb2bf',
+  colors = {
+    -- foreground = '#abb2bf',
     --     tab_bar = {
     --         background = 'rgba(30,33,39,95%)',
     --
@@ -44,21 +48,21 @@ return {
     --
     --         },
     --     },
-    -- },
+  },
 
-    -- window_frame = {
-    --     active_titlebar_bg = 'rgba(30,33,39,95%)',
-    --
-    --     inactive_titlebar_bg = 'rgba(30,33,39,95%)',
-    -- },
+  -- window_frame = {
+  --     active_titlebar_bg = 'rgba(30,33,39,95%)',
+  --
+  --     inactive_titlebar_bg = 'rgba(30,33,39,95%)',
+  -- },
 
-    window_background_opacity = 0.97,
-    hide_tab_bar_if_only_one_tab = true,
+  -- window_background_opacity = 0.95,
+  hide_tab_bar_if_only_one_tab = true,
 
-    window_padding = {
-        left = 0,
-        right = 0,
-        top = 0,
-        bottom = 0,
-    },
+  window_padding = {
+    left = 0,
+    right = 0,
+    top = 0,
+    bottom = 0,
+  },
 }
