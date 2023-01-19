@@ -48,6 +48,7 @@ require('packer').startup(function(use)
 
   -- themes
   use 'Mofiqul/vscode.nvim'
+  use 'NTBBloodbath/doom-one.nvim'
 
   -- telescope
   use {
@@ -65,15 +66,17 @@ require('packer').startup(function(use)
 
   -- tmux navigation
   use 'alexghergh/nvim-tmux-navigation'
+
+  use 'alvan/vim-closetag'
 end)
 
 -- load plugin config
 require('plugins.config.lsp')
 require('plugins.config.nvim-tree')
-require('plugins.config.ts')
 require("plugins.config.autopairs")
 require('plugins.config.comment')
 require('plugins.config.telescope-config')
 require('plugins.config.git')
 require('plugins.config.navigation')
 require('plugins.config.term')
+require('plugins.config.ts')
