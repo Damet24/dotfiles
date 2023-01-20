@@ -4,10 +4,6 @@ return {
   font = wezterm.font 'DaddyTimeMono NF',
   font_size = 15,
   -- color_scheme = "Framer (base16)",
-  -- color_scheme = "Ashes (light) (terminal.sexy)",
-  -- color_scheme = "Atelier Seaside Light (base16)",
-  -- color_scheme = "DoomOne",
-  
 
   colors = {
     -- foreground = '#abb2bf',
