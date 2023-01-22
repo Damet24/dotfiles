@@ -49,6 +49,7 @@ require('packer').startup(function(use)
   -- themes
   use 'Mofiqul/vscode.nvim'
   use 'NTBBloodbath/doom-one.nvim'
+  use 'folke/tokyonight.nvim'
 
   -- telescope
   use {

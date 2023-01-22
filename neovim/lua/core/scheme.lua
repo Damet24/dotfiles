@@ -11,4 +11,4 @@ vim.o.background = 'dark'
 --   }
 -- })
 
-vim.cmd('colorscheme doom-one')
+vim.cmd('colorscheme tokyonight-night')
