@@ -69,6 +69,8 @@ require('packer').startup(function(use)
   use 'alexghergh/nvim-tmux-navigation'
 
   use 'alvan/vim-closetag'
+
+  use 'nvim-lualine/lualine.nvim'
 end)
 
 -- load plugin config
@@ -81,3 +83,4 @@ require('plugins.config.git')
 require('plugins.config.navigation')
 require('plugins.config.term')
 require('plugins.config.ts')
+require('plugins.config.line')
