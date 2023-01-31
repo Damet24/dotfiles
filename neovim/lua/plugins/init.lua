@@ -71,6 +71,8 @@ require('packer').startup(function(use)
   use 'alvan/vim-closetag'
 
   use 'nvim-lualine/lualine.nvim'
+
+  use {'stevearc/dressing.nvim'}
 end)
 
 -- load plugin config
