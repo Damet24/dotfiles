@@ -13,8 +13,11 @@ require("nvim-tree").setup({
     group_empty = true,
   },
   filters = {
-    dotfiles = true,
+    dotfiles = false,
   },
+  git = {
+    ignore = false
+  }
 })
 
 map('n', '<C-n>', ':NvimTreeToggle<CR>', opts)
