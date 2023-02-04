@@ -10,6 +10,9 @@ super + Return
 alt + @space
 	~/dotfiles/rofi/launcher.sh
 
+super + @space
+  ~/dotfiles/scripts/layout.sh
+
 alt + shift + @space
   ~/dotfiles/rofi/clipboard.sh
 
