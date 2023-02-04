@@ -7,8 +7,14 @@ super + Return
 	wezterm
 
 # program launcher
-super + @space
-	rofi -show drun
+alt + @space
+	~/dotfiles/rofi/launcher.sh
+
+alt + shift + @space
+  ~/dotfiles/rofi/clipboard.sh
+
+super + p
+  ~/dotfiles/rofi/powermenu_alt
 
 # make sxhkd reload its configuration files:
 super + Escape

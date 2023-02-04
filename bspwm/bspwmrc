@@ -2,21 +2,32 @@
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 
-bspc monitor -d I II III IV V VI VII VIII IX X
+feh --no-fehbg --bg-fill ~/dotfiles/theme/images/bg.jpg
+picom -b --config $HOME/.config/picom/picom.conf &
+xinput --set-prop "Logitech G203 LIGHTSYNC Gaming Mouse" "libinput Accel Speed" -1 &
+greenclip daemon &
+sh ~/.config/polybar/launch.sh &
+xfce4-power-manager &
+xsetroot -cursor_name left_ptr
+nm-applet &
+blueman-applet &
 
-bspc config border_width         0
-bspc config window_gap          12
+bspc monitor -d 1 2 3 4 5
 
-spc config split_ratio          0.52
+bspc config focused_border_color    \#c24e48
+bspc config normal_border_color     \#461a22
+
+bspc config left_padding 0
+bspc config border_width 2
+bspc config window_gap 20
+bspc config split_ratio 0.50
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
-feh --bg-fill ~/dotfiles/theme/bg.png &
-picom --config $HOME/.config/picom/picom.conf &
-xinput --set-prop "Logitech G203 LIGHTSYNC Gaming Mouse" "libinput Accel Speed" -1 &
-
-# bspc rule -a Gimp desktop='^8' state=floating follow=on
-# bspc rule -a Chromium desktop='^2'
+bspc rule -a Gimp desktop='^8' state=floating follow=on
+bspc rule -a Google-chrome desktop='^1'
+bspc rule -a Wezterm state=fullscreen desktop='^7' focus=on
 # bspc rule -a mplayer2 state=floating
 # bspc rule -a Kupfer.py focus=on
 # bspc rule -a Screenkey manage=off
+pkill borders ; borders &
