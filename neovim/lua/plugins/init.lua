@@ -50,6 +50,7 @@ require('packer').startup(function(use)
   use 'Mofiqul/vscode.nvim'
   use 'NTBBloodbath/doom-one.nvim'
   use 'folke/tokyonight.nvim'
+  use { "briones-gabriel/darcula-solid.nvim", requires = "rktjmp/lush.nvim" }
 
   -- telescope
   use {
