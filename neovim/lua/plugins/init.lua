@@ -51,6 +51,7 @@ require('packer').startup(function(use)
   use 'NTBBloodbath/doom-one.nvim'
   use 'folke/tokyonight.nvim'
   use { "briones-gabriel/darcula-solid.nvim", requires = "rktjmp/lush.nvim" }
+  use { "ellisonleao/gruvbox.nvim" }
 
   -- telescope
   use {
