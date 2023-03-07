@@ -49,7 +49,7 @@ require('packer').startup(function(use)
   -- themes
   use 'Mofiqul/vscode.nvim'
   use { "ellisonleao/gruvbox.nvim" }
-  use 'RRethy/nvim-base16'
+  use 'navarasu/onedark.nvim'
 
   -- telescope
   use {
