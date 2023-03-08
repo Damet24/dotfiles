@@ -78,6 +78,10 @@ require('packer').startup(function(use)
   use { 'stevearc/dressing.nvim' }
 
   use 'gpanders/editorconfig.nvim'
+
+  use 'jose-elias-alvarez/null-ls.nvim'
+
+  use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
 end)
 
 -- load plugin config
@@ -90,3 +94,4 @@ require('plugins.config.git')
 require('plugins.config.term')
 require('plugins.config.ts')
 require('plugins.config.line')
+require('plugins.config.tabs')
