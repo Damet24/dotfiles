@@ -1,8 +1,8 @@
 local wezterm = require 'wezterm'
 
 return {
-  font = wezterm.font 'DaddyTimeMono NF',
-  font_size = 15,
+  -- font = wezterm.font 'DaddyTimeMono NF',
+  font_size = 14,
   -- color_scheme = "Framer (base16)",
 
   colors = {
