@@ -1,5 +1,7 @@
 local opt = vim.opt
 
+vim.g.mapleader = ' '
+
 opt.laststatus = 3 -- global statusline
 opt.showmode = false
 
@@ -29,3 +31,9 @@ opt.timeoutlen = 400
 opt.undofile = true
 
 opt.updatetime = 250
+
+vim.opt.list = true
+vim.opt.listchars:append "eol:↴"
+
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1

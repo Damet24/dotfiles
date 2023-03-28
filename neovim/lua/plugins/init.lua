@@ -1,97 +1,48 @@
 require('packer').startup(function(use)
-  use 'wbthomason/packer.nvim' -- Package manager
+  use 'wbthomason/packer.nvim'   -- Package manager
 
-  -- nvim tree
-  use {
-    'nvim-tree/nvim-tree.lua',
-    requires = { 'nvim-tree/nvim-web-devicons' -- optional, for file icons
-    },
-    tag = 'nightly' -- optional, updated every week. (see issue #1193)
-  }
-
-  --tree sitter
-  use 'nvim-treesitter/nvim-treesitter'
-
-  -- lsp and cmp
-  use {
-    'VonHeikemen/lsp-zero.nvim',
-    requires = {
-      -- LSP Support
-      { 'neovim/nvim-lspconfig' },
-      { 'williamboman/mason.nvim' },
-      { 'williamboman/mason-lspconfig.nvim' },
-
-      -- Autocompletion
-      { 'hrsh7th/nvim-cmp' },
-      { 'hrsh7th/cmp-buffer' },
-      { 'hrsh7th/cmp-path' },
-      { 'saadparwaiz1/cmp_luasnip' },
-      { 'hrsh7th/cmp-nvim-lsp' },
-      { 'hrsh7th/cmp-nvim-lua' },
-
-      -- Snippets
-      { 'L3MON4D3/LuaSnip' },
-      { 'rafamadriz/friendly-snippets' },
-    }
-  }
-
-  -- autopairs
-  use 'windwp/nvim-autopairs'
-
-  -- indents
-  use 'lukas-reineke/indent-blankline.nvim'
+  -- theme
+  use 'Mofiqul/vscode.nvim'
+  use 'nvim-tree/nvim-web-devicons'
 
   use 'nvim-lua/plenary.nvim'
+  -- tree sitter
+  use 'nvim-treesitter/nvim-treesitter'
 
-  -- nvim comment
+  -- comments
   use 'terrortylor/nvim-comment'
+  use 'windwp/nvim-autopairs'
+  use 'alvan/vim-closetag'
 
-  -- themes
-  use 'Mofiqul/vscode.nvim'
-  use { "ellisonleao/gruvbox.nvim" }
-  use 'navarasu/onedark.nvim'
+  -- lsp
+  use 'neovim/nvim-lspconfig'
+  use 'hrsh7th/cmp-nvim-lsp'
+  use 'hrsh7th/cmp-buffer'
+  use 'hrsh7th/cmp-path'
+  use 'hrsh7th/cmp-cmdline'
+  use 'hrsh7th/nvim-cmp'
+  use 'jose-elias-alvarez/null-ls.nvim'
+  use { "williamboman/mason.nvim", "williamboman/mason-lspconfig.nvim" }
 
-  -- telescope
+  use 'L3MON4D3/LuaSnip'
+  use 'saadparwaiz1/cmp_luasnip'
+
   use {
-    'nvim-telescope/telescope.nvim', tag = '0.1.0',
+    'nvim-telescope/telescope.nvim', tag = '0.1.1',
     requires = { { 'nvim-lua/plenary.nvim' } }
   }
 
-  -- virtual terminal
-  use 'akinsho/toggleterm.nvim'
+  use "lukas-reineke/indent-blankline.nvim"
 
-  -- git integrations
-  -- use 'airblade/vim-gitgutter'
-  use 'lewis6991/gitsigns.nvim'
-  use 'sindrets/diffview.nvim'
+  use 'nvim-tree/nvim-tree.lua'
 
-  -- tmux navigation
-  use({
-    "aserowy/tmux.nvim",
-    config = function() return require("tmux").setup() end
-  })
-
-  use 'alvan/vim-closetag'
-
-  use 'nvim-lualine/lualine.nvim'
-
-  use { 'stevearc/dressing.nvim' }
-
-  use 'gpanders/editorconfig.nvim'
-
-  use 'jose-elias-alvarez/null-ls.nvim'
-
-  use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
+  use 'patstockwell/vim-monokai-tasty'
+  use { 'kartikp10/noctis.nvim', requires = { 'rktjmp/lush.nvim' } }
 end)
 
--- load plugin config
-require('plugins.config.lsp')
+require('plugins.config.colorscheme')
+require('plugins.config.lsp_config')
+require('plugins.config.telescope_config')
+require('plugins.config.syntax-tree')
 require('plugins.config.nvim-tree')
-require("plugins.config.autopairs")
-require('plugins.config.comment')
-require('plugins.config.telescope-config')
-require('plugins.config.git')
-require('plugins.config.term')
-require('plugins.config.ts')
-require('plugins.config.line')
 require('plugins.config.tabs')
