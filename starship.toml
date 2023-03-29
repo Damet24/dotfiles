@@ -1,74 +1,118 @@
-format = """
-$username\
-$directory\
-$git_branch\
-$git_status\
-$nodejs\
-$rust\
-$python\
-$docker_context\
-$time\
-[ ]()\
-"""
+[buf]
+format = '(with [$symbol$version ]($style))'
 
-# You can also replace your username with a neat symbol like  to save some space
-[username]
-show_always = true
-style_user = "fg:#9A348E"
-style_root = "fg:#9A348E"
-format = '[$user ]($style)'
+[bun]
+format = '(via [$symbol($version )]($style))'
 
-[directory]
-style = "fg:#DA627D"
-format = "[ $path ]($style)"
-truncation_length = 3
-truncation_symbol = "…/"
+[c]
+format = '(via [$symbol($version(-$name) )]($style))'
 
-# Here is how you can shorten some long paths by text replacement
-# similar to mapped_locations in Oh My Posh:
-[directory.substitutions]
-"Documents" = " "
-"Downloads" = " "
-"Music" = " "
-"Pictures" = " "
-# Keep in mind that the order matters. For example:
-# "Important Documents" = "  "
-# will not be replaced, because "Documents" was already substituted before.
-# So either put "Important Documents" before "Documents" or use the substituted version:
-# "Important  " = "  "
+[cmake]
+format = '(via [$symbol($version )]($style))'
 
-[docker_context]
-symbol = " "
-style = "fg:#06969A"
-format = '[ $symbol $context ]($style) $path'
+[cobol]
+format = '(via [$symbol($version )]($style))'
 
-[git_branch]
-symbol = ""
-style = "fg:#FCA17D"
-format = '[ $symbol $branch ]($style)'
+[crystal]
+format = '(via [$symbol($version )]($style))'
 
-[git_status]
-style = "fg:#FCA17D"
-format = '[$all_status$ahead_behind ]($style)'
+[daml]
+format = '(via [$symbol($version )]($style))'
+
+[dart]
+format = '(via [$symbol($version )]($style))'
+
+[deno]
+format = '(via [$symbol($version )]($style))'
+
+[dotnet]
+format = '(via [$symbol($version )(🎯 $tfm )]($style))'
+
+[elixir]
+format = '(via [$symbol($version \(OTP $otp_version\) )]($style))'
+
+[elm]
+format = '(via [$symbol($version )]($style))'
+
+[erlang]
+format = '(via [$symbol($version )]($style))'
+
+[fennel]
+format = '(via [$symbol($version )]($style))'
+
+[golang]
+format = '(via [$symbol($version )]($style))'
+
+[haskell]
+format = '(via [$symbol($version )]($style))'
+
+[helm]
+format = '(via [$symbol($version )]($style))'
+
+[java]
+format = '(via [$symbol($version )]($style))'
+
+[julia]
+format = '(via [$symbol($version )]($style))'
+
+[kotlin]
+format = '(via [$symbol($version )]($style))'
+
+[lua]
+format = '(via [$symbol($version )]($style))'
+
+[nim]
+format = '(via [$symbol($version )]($style))'
 
 [nodejs]
-symbol = ""
-style = "fg:#86BBD8"
-format = '[ $symbol ($version) ]($style)'
+format = '(via [$symbol($version )]($style))'
 
-[rust]
-symbol = ""
-style = "fg:#86BBD8"
-format = '[ $symbol ($version) ]($style)'
+[ocaml]
+format = '(via [$symbol($version )(\($switch_indicator$switch_name\) )]($style))'
+
+[opa]
+format = '(via [$symbo($version ]($style))"'
+[package]
+format = '(is [$symbol$version]($style) )'
+
+[perl]
+format = '(via [$symbol($version )]($style))'
+
+[php]
+format = '(via [$symbol($version )]($style))'
+
+[purescript]
+format = '(via [$symbol($version )]($style))'
 
 [python]
-symbol = " "
-pyenv_version_name = true
-python_binary = ["./venv/bin/python", "python", "python3", "python2"]
+format = '(via [${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style))'
 
-[time]
-disabled = false
-time_format = "%R" # Hour:Minute Format
-style = "fg:#33658A"
-format = '[ ♥ $time ]($style)'
+[raku]
+format = '(via [$symbol($version-$vm_version )]($style))'
 
+[red]
+format = '(via [$symbol($version )]($style))'
+
+[rlang]
+format = '(via [$symbol($version )]($style))'
+
+[ruby]
+format = '(via [$symbol($version )]($style))'
+
+[rust]
+format = '(via [$symbol($version )]($style))'
+
+[scala]
+format = '(via [$symbol($version )]($style))'
+
+[swift]
+format = '(via [$symbol($version )]($style))'
+
+[vagrant]
+format = '(via [$symbol($version )]($style))'
+
+[vlang]
+format = '(via [$symbol($version )]($style))'
+
+[zig]
+format = '(via [$symbol($version )]($style))'
