@@ -1,7 +1,8 @@
 require('packer').startup(function(use)
-  use 'wbthomason/packer.nvim'   -- Package manager
+  use 'wbthomason/packer.nvim' -- Package manager
 
   -- theme
+  use 'Th3Whit3Wolf/one-nvim'
   use 'Mofiqul/vscode.nvim'
   use 'nvim-tree/nvim-web-devicons'
 
@@ -38,6 +39,8 @@ require('packer').startup(function(use)
 
   use 'patstockwell/vim-monokai-tasty'
   use { 'kartikp10/noctis.nvim', requires = { 'rktjmp/lush.nvim' } }
+
+  use "akinsho/toggleterm.nvim"
 end)
 
 require('plugins.config.colorscheme')
