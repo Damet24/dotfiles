@@ -34,6 +34,7 @@ local icons = {
   Enum = ' ',
 }
 
+
 cmp.setup({
   snippet = {
     expand = function(args)
@@ -147,3 +148,15 @@ require("lspconfig").astro.setup {
   on_attach = on_attach,
   capabilities = capabilities
 }
+
+local signs = {
+    Error = " ",
+    Warn = " ",
+    Hint = " ",
+    Info = " "
+}
+
+for type, icon in pairs(signs) do
+    local hl = "DiagnosticSign" .. type
+    vim.fn.sign_define(hl, {text = icon, texthl = hl, numhl = hl})
+end

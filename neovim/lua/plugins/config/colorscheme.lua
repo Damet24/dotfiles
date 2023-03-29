@@ -1,3 +1,3 @@
-vim.o.background = 'light'
+vim.o.background = 'dark'
 
-vim.cmd('colorscheme one-nvim')
+vim.cmd('colorscheme darcula')
