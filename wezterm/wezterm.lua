@@ -4,7 +4,7 @@ return {
   -- font = wezterm.font 'DaddyTimeMono NF',
   font_size = 14,
   -- color_scheme = "Framer (base16)",
-  color_scheme = '3024 (light) (terminal.sexy)',
+  color_scheme = 'Solarized Darcula',
 
 
   colors = {
