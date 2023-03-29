@@ -37,9 +37,6 @@ format = '(via [$symbol($version )]($style))'
 [erlang]
 format = '(via [$symbol($version )]($style))'
 
-[fennel]
-format = '(via [$symbol($version )]($style))'
-
 [golang]
 format = '(via [$symbol($version )]($style))'
 
@@ -70,8 +67,6 @@ format = '(via [$symbol($version )]($style))'
 [ocaml]
 format = '(via [$symbol($version )(\($switch_indicator$switch_name\) )]($style))'
 
-[opa]
-format = '(via [$symbo($version ]($style))"'
 [package]
 format = '(is [$symbol$version]($style) )'
 
