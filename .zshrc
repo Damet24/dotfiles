@@ -42,6 +42,8 @@ alias vpnpass='cat ~/.vpn/.info'
 alias vpnconnect='sudo openvpn --config ~/.vpn/profile-3.ovpn'
 alias gdf='git diff --color | diff-so-fancy'
 
+alias clip='xclip -selection c'
+
 # git alias
 alias gst='git status'
 alias gaa='git add .'
@@ -61,3 +63,5 @@ bindkey "^[[1;5D" backward-word
 
 # Load Angular CLI autocompletion.
 source <(ng completion script)
+
+
