@@ -40,6 +40,12 @@ require('packer').startup(function(use)
   use { 'kartikp10/noctis.nvim', requires = { 'rktjmp/lush.nvim' } }
 
   use "akinsho/toggleterm.nvim"
+
+  -- tabs
+  use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
+  use 'moll/vim-bbye'
+
+  use {'stevearc/dressing.nvim'}
 end)
 
 require('plugins.config.colorscheme')
@@ -49,3 +55,5 @@ require('plugins.config.syntax-tree')
 require('plugins.config.nvim-tree')
 require('plugins.config.tabs')
 require('plugins.config.toggleterm')
+require('plugins.config.bufferline')
+require('plugins.config.dressing')

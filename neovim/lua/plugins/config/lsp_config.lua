@@ -32,6 +32,7 @@ local icons = {
   Function = ' ',
   Keyword = ' ',
   Enum = ' ',
+  File = ' ',
 }
 
 
