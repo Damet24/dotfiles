@@ -2,10 +2,7 @@ require('packer').startup(function(use)
   use 'wbthomason/packer.nvim' -- Package manager
 
   -- theme
-  use 'Th3Whit3Wolf/one-nvim'
-  use 'Mofiqul/vscode.nvim'
   use 'nvim-tree/nvim-web-devicons'
-  use { "briones-gabriel/darcula-solid.nvim", requires = "rktjmp/lush.nvim" }
   use 'doums/darcula'
 
   use 'nvim-lua/plenary.nvim'
