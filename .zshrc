@@ -1,5 +1,5 @@
 # starship config
-#eval "$(starship init zsh)"
+eval "$(starship init zsh)"
 
 setopt autocd
 
