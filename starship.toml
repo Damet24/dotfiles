@@ -19,7 +19,6 @@ trim_at = '.companyname.com'
 disabled = false
 
 [git_branch]
-symbol = ''
 format = '\($branch\) '
 truncation_length = 4
 truncation_symbol = ''
