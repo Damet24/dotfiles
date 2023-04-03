@@ -21,7 +21,7 @@ require("bufferline").setup {
     tab_size = 18,
     diagnostics = "nvim_lsp",
     diagnostics_update_in_insert = false,
-   offsets = {
+    offsets = {
       {
         filetype = "NvimTree",
         text = "File Explorer",
@@ -30,7 +30,6 @@ require("bufferline").setup {
       }
     },
     color_icons = true,
-    separator_style = "slant",
   }
 }
 
