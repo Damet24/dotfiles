@@ -3,8 +3,7 @@ require('packer').startup(function(use)
 
   -- theme
   use 'nvim-tree/nvim-web-devicons'
-  use 'doums/darcula'
-  use ({ 'projekt0n/github-nvim-theme', tag = 'v0.0.7' })
+  use 'rebelot/kanagawa.nvim'
 
   use 'nvim-lua/plenary.nvim'
   -- tree sitter
