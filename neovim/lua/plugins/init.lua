@@ -4,6 +4,7 @@ require('packer').startup(function(use)
   -- theme
   use 'nvim-tree/nvim-web-devicons'
   use 'doums/darcula'
+  use ({ 'projekt0n/github-nvim-theme', tag = 'v0.0.7' })
 
   use 'nvim-lua/plenary.nvim'
   -- tree sitter
@@ -48,7 +49,6 @@ require('packer').startup(function(use)
   use {'stevearc/dressing.nvim'}
 end)
 
-require('plugins.config.colorscheme')
 require('plugins.config.lsp_config')
 require('plugins.config.telescope_config')
 require('plugins.config.syntax-tree')
@@ -57,3 +57,4 @@ require('plugins.config.tabs')
 require('plugins.config.toggleterm')
 require('plugins.config.bufferline')
 require('plugins.config.dressing')
+require('plugins.config.colorscheme')
