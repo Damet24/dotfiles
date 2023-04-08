@@ -1,6 +1,7 @@
 require("nvim-tree").setup({
   sort_by = "case_sensitive",
   view = {
+    side = 'right',
     adaptive_size = true,
     hide_root_folder = true,
     mappings = {
@@ -27,4 +28,5 @@ require("nvim-tree").setup({
 
 map('n', '<C-n>', ':NvimTreeToggle<CR>', opts)
 map('n', '<leader>e', ':NvimTreeFocus<CR>', opts)
+map('n', '<C-f>', ':NvimTreeFindFile<CR>', opts)
 

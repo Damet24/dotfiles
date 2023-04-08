@@ -1,4 +1,3 @@
-require('utils')
 require("mason").setup()
 require("mason-lspconfig").setup({})
 
@@ -136,6 +135,11 @@ require("lspconfig").tsserver.setup {
 }
 
 require("lspconfig").vls.setup {
+  on_attach = on_attach,
+  capabilities = capabilities
+}
+
+require("lspconfig").vuels.setup {
   on_attach = on_attach,
   capabilities = capabilities
 }

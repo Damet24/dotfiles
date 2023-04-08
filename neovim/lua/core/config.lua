@@ -13,6 +13,8 @@ opt.expandtab = true
 opt.smarttab = true
 opt.shiftwidth = 2
 opt.tabstop = 2
+opt.foldenable = true
+opt.foldmethod = 'manual'
 
 opt.fillchars = { eob = " " }
 opt.ignorecase = true

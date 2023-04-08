@@ -42,10 +42,22 @@ require('packer').startup(function(use)
   use "akinsho/toggleterm.nvim"
 
   -- tabs
-  use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
+  use { 'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons' }
   use 'moll/vim-bbye'
 
-  use {'stevearc/dressing.nvim'}
+  use { 'nvim-telescope/telescope-ui-select.nvim' }
+  use {
+    "ray-x/guihua.lua",
+    run = "cd lua/fzy && make",
+  }
+
+  use { 'anuvyklack/pretty-fold.nvim',
+    config = function()
+      require('pretty-fold').setup()
+    end
+  }
+
+  use { "alexghergh/nvim-tmux-navigation" }
 end)
 
 require('plugins.config.lsp_config')
@@ -55,6 +67,5 @@ require('plugins.config.nvim-tree')
 require('plugins.config.tabs')
 require('plugins.config.toggleterm')
 require('plugins.config.bufferline')
-require('plugins.config.dressing')
 require('plugins.config.comments')
 require('plugins.config.colorscheme')
