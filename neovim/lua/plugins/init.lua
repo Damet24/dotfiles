@@ -46,10 +46,6 @@ require('packer').startup(function(use)
   use 'moll/vim-bbye'
 
   use { 'nvim-telescope/telescope-ui-select.nvim' }
-  use {
-    "ray-x/guihua.lua",
-    run = "cd lua/fzy && make",
-  }
 
   use { 'anuvyklack/pretty-fold.nvim',
     config = function()
@@ -60,6 +56,7 @@ require('packer').startup(function(use)
   use { "alexghergh/nvim-tmux-navigation" }
 end)
 
+require('plugins.config.colorscheme')
 require('plugins.config.lsp_config')
 require('plugins.config.telescope_config')
 require('plugins.config.syntax-tree')
@@ -68,4 +65,4 @@ require('plugins.config.tabs')
 require('plugins.config.toggleterm')
 require('plugins.config.bufferline')
 require('plugins.config.comments')
-require('plugins.config.colorscheme')
+require('plugins.config.navigation')
