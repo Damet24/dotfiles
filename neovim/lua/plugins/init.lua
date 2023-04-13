@@ -54,6 +54,11 @@ require('packer').startup(function(use)
   }
 
   use { "alexghergh/nvim-tmux-navigation" }
+
+  use {
+    "windwp/nvim-autopairs",
+    config = function() require("nvim-autopairs").setup {} end
+  }
 end)
 
 require('plugins.config.colorscheme')
