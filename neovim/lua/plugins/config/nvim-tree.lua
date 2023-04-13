@@ -3,7 +3,6 @@ require("nvim-tree").setup({
   view = {
     side = 'right',
     adaptive_size = true,
-    hide_root_folder = true,
     mappings = {
       list = {
         { key = "u", action = "dir_up" },
