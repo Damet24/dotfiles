@@ -2,7 +2,7 @@
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 
-feh --no-fehbg --bg-fill ~/dotfiles/theme/images/bg.jpg
+feh --no-fehbg --bg-fill ~/dotfiles/theme/images/bg2.jpg
 
 pkill picom
 picom -b --config $HOME/.config/picom/picom.conf &
@@ -22,7 +22,7 @@ dunst -conf ~/.config/dunst/dunstrc &
 
 bspc monitor -d 1 2 3 4 5
 
-bspc config focused_border_color    \#c24e48
+bspc config focused_border_color    \#FFED8D
 bspc config normal_border_color     \#461a22
 
 bspc config left_padding 0
