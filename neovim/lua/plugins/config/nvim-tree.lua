@@ -1,5 +1,10 @@
 require("nvim-tree").setup({
   sort_by = "case_sensitive",
+  actions = {
+    open_file = {
+      quit_on_open = true,
+    },
+  },
   view = {
     side = 'right',
     adaptive_size = true,
@@ -10,8 +15,8 @@ require("nvim-tree").setup({
     },
   },
   renderer = {
-    group_empty = true,
-    indent_marker =  {
+    group_empty = false,
+    indent_markers = {
       enable = true,
       inline_arrows = true,
       icons = { corner = "└", edge = "│", item = "│", bottom = "─", none = " ", }
@@ -28,4 +33,3 @@ require("nvim-tree").setup({
 map('n', '<C-n>', ':NvimTreeToggle<CR>', opts)
 map('n', '<leader>e', ':NvimTreeFocus<CR>', opts)
 map('n', '<C-f>', ':NvimTreeFindFile<CR>', opts)
-

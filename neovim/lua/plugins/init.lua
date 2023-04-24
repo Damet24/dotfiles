@@ -32,6 +32,11 @@ require('packer').startup(function(use)
     requires = { { 'nvim-lua/plenary.nvim' } }
   }
 
+  use {
+    'eckon/treesitter-current-functions',
+    requires = { "nvim-treesitter/nvim-treesitter", "nvim-telescope/telescope.nvim" }
+  }
+
   use "lukas-reineke/indent-blankline.nvim"
 
   use 'nvim-tree/nvim-tree.lua'
@@ -63,6 +68,7 @@ end)
 
 require('plugins.config.colorscheme')
 require('plugins.config.lsp_config')
+require('plugins.config.null-ls')
 require('plugins.config.telescope_config')
 require('plugins.config.syntax-tree')
 require('plugins.config.nvim-tree')

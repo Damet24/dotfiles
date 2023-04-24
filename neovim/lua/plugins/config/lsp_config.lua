@@ -46,8 +46,8 @@ cmp.setup({
     documentation = cmp.config.window.bordered(),
   },
   formatting = {
-    fields = {"kind", "abbr", "menu"},
-    format = function (_, vim_item)
+    fields = { "kind", "abbr", "menu" },
+    format = function(_, vim_item)
       local kind = vim_item.kind
 
       vim_item.kind = (icons[kind] or " ")
@@ -85,6 +85,7 @@ cmp.setup({
     { name = 'luasnip' }, -- For luasnip users.
   }, {
     { name = 'buffer' },
+    { name = 'path' },
   })
 })
 
@@ -159,14 +160,24 @@ require("lspconfig").jsonls.setup {
   capabilities = capabilities
 }
 
+require("lspconfig").pyright.setup {
+  on_attach = on_attach,
+  capabilities = capabilities
+}
+
+require("lspconfig").svelte.setup {
+  on_attach = on_attach,
+  capabilities = capabilities
+}
+
 local signs = {
-    Error = " ",
-    Warn = " ",
-    Hint = " ",
-    Info = " "
+  Error = " ",
+  Warn = " ",
+  Hint = " ",
+  Info = " "
 }
 
 for type, icon in pairs(signs) do
-    local hl = "DiagnosticSign" .. type
-    vim.fn.sign_define(hl, {text = icon, texthl = hl, numhl = hl})
+  local hl = "DiagnosticSign" .. type
+  vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = hl })
 end

@@ -1,6 +1,11 @@
+local status_ok, colorscheme = pcall(require, 'kanagawa')
+if not status_ok then
+  return
+end
+
 vim.o.background = 'dark'
 
-require('kanagawa').setup({
+colorscheme.setup({
   undercurl = true,   -- enable undercurls
   commentStyle = { italic = false },
   functionStyle = {},
@@ -22,7 +27,7 @@ require('kanagawa').setup({
   background = {
                        -- map the value of 'background' option to a theme
     dark = "wave",     -- try "dragon" !
-    light = "lotus"
+    -- light = "lotus"
   },
 })
 
