@@ -10,7 +10,7 @@ colorscheme.setup({
   commentStyle = { italic = false },
   functionStyle = {},
   keywordStyle = { italic = false },
-  statementStyle = { bold = true },
+  statementStyle = { bold = true, italic = false },
   typeStyle = {},
   transparent = false,     -- do not set background color
   dimInactive = false,     -- dim inactive window `:h hl-NormalNC`
