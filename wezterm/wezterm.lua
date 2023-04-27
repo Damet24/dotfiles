@@ -3,6 +3,7 @@ local wezterm = require 'wezterm'
 return {
   font = wezterm.font 'DaddyTime Mono NF',
   font_size = 16,
+  line_height = 1.2,
   -- color_scheme = "Framer (base16)",
   color_scheme = 'Afterglow',
 
