@@ -11,8 +11,8 @@ require('packer').startup(function(use)
 
   -- comments
   use 'terrortylor/nvim-comment'
-  use 'windwp/nvim-autopairs'
-  use 'alvan/vim-closetag'
+  use 'm4xshen/autoclose.nvim'
+  use 'windwp/nvim-ts-autotag'
 
   -- lsp
   use 'neovim/nvim-lspconfig'
@@ -73,6 +73,7 @@ require('plugins.config.telescope_config')
 require('plugins.config.syntax-tree')
 require('plugins.config.nvim-tree')
 require('plugins.config.tabs')
+require('plugins.config.tags')
 require('plugins.config.toggleterm')
 require('plugins.config.bufferline')
 require('plugins.config.comments')
