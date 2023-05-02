@@ -18,6 +18,7 @@ export PATH="$HOME/.local/bin:$PATH"
  export PATH="$DENO_INSTALL/bin:$PATH"
 
  export PATH="$HOME/.symfony5/bin:$PATH"
+ export PATH=$PATH:~/.local/bin
 # CUSTOM
 
 alias cat='/bin/bat'
@@ -29,10 +30,10 @@ alias la='lsd -A --group-dirs=first'
 alias l='lsd -CF --group-dirs=first'
 alias ls='lsd --group-dirs=first'
 
-alias v='/bin/nvim'
-alias vim='/bin/nvim'
-alias nvim='/bin/nvim'
-alias py='/usr/bin/python3'
+alias v='~/.local/bin/nvim'
+alias vim='~/.local/bin/nvim'
+alias nvim='~/.local/bin/nvim'
+alias py='~/usr/bin/python3'
 
 alias dsa='docker stop $(docker ps -q)'
 alias lamp='~/.scripts/start_lamp_server.sh'
@@ -59,9 +60,4 @@ source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 bindkey "^[[1;5C" forward-word
 bindkey "^[[1;5D" backward-word
-
-
-# Load Angular CLI autocompletion.
-source <(ng completion script)
-
 
