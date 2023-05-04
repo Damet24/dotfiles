@@ -135,22 +135,27 @@ require("lspconfig").tsserver.setup {
   capabilities = capabilities
 }
 
-require("lspconfig").vuels.setup {
-  on_attach = on_attach,
-  capabilities = capabilities
-}
+-- require("lspconfig").vuels.setup {
+--   on_attach = on_attach,
+--   capabilities = capabilities
+-- }
 
-require("lspconfig").vls.setup {
-  on_attach = on_attach,
-  capabilities = capabilities
-}
+-- require("lspconfig").vls.setup {
+--   on_attach = on_attach,
+--   capabilities = capabilities
+-- }
 
-require("lspconfig").intelephense.setup {
-  on_attach = on_attach,
-  capabilities = capabilities
-}
+-- require("lspconfig").intelephense.setup {
+--   on_attach = on_attach,
+--   capabilities = capabilities
+-- }
 
 require("lspconfig").astro.setup {
+  on_attach = on_attach,
+  capabilities = capabilities
+}
+
+require("lspconfig").tailwindcss.setup {
   on_attach = on_attach,
   capabilities = capabilities
 }
