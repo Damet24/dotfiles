@@ -26,3 +26,4 @@ map('n', '<leader>p',
 "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer =  false }))<cr>",
 opts)
 map('n', '<leader>f', builtin.live_grep, opts)
+map('n', '<leader>b', builtin.buffers,  opts)

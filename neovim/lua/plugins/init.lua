@@ -47,7 +47,6 @@ require('packer').startup(function(use)
   use "akinsho/toggleterm.nvim"
 
   -- tabs
-  use { 'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons' }
   use 'moll/vim-bbye'
 
   use { 'nvim-telescope/telescope-ui-select.nvim' }
@@ -64,6 +63,13 @@ require('packer').startup(function(use)
     "windwp/nvim-autopairs",
     config = function() require("nvim-autopairs").setup {} end
   }
+
+  use {
+    "SmiteshP/nvim-navic",
+    requires = "neovim/nvim-lspconfig"
+  }
+
+  use 'feline-nvim/feline.nvim'
 end)
 
 require('plugins.config.colorscheme')
@@ -75,6 +81,5 @@ require('plugins.config.nvim-tree')
 require('plugins.config.tabs')
 require('plugins.config.tags')
 require('plugins.config.toggleterm')
-require('plugins.config.bufferline')
 require('plugins.config.comments')
 require('plugins.config.navigation')
