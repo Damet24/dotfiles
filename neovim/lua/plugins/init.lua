@@ -4,6 +4,7 @@ require('packer').startup(function(use)
   -- theme
   use 'nvim-tree/nvim-web-devicons'
   use 'rebelot/kanagawa.nvim'
+  use ({ 'projekt0n/github-nvim-theme', tag = 'v0.0.7' })
 
   use 'nvim-lua/plenary.nvim'
   -- tree sitter
@@ -62,11 +63,6 @@ require('packer').startup(function(use)
   use {
     "windwp/nvim-autopairs",
     config = function() require("nvim-autopairs").setup {} end
-  }
-
-  use {
-    "SmiteshP/nvim-navic",
-    requires = "neovim/nvim-lspconfig"
   }
 
   use 'feline-nvim/feline.nvim'

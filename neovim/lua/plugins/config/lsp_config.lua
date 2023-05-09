@@ -3,52 +3,10 @@ require("mason-lspconfig").setup({})
 
 local import_luasnip, luasnip = pcall(require, 'luasnip')
 if not import_luasnip then return end
-local navic = require("nvim-navic")
 
-navic.setup {
-  icons = {
-    File = ' ',
-    Module = ' ',
-    Namespace = ' ',
-    Package = ' ',
-    Class = ' ',
-    Method = ' ',
-    Property = ' ',
-    Field = ' ',
-    Constructor = ' ',
-    Enum = ' ',
-    Interface = ' ',
-    Function = ' ',
-    Variable = ' ',
-    Constant = ' ',
-    String = ' ',
-    Number = ' ',
-    Boolean = ' ',
-    Array = ' ',
-    Object = ' ',
-    Key = ' ',
-    Null = ' ',
-    EnumMember = ' ',
-    Struct = ' ',
-    Event = ' ',
-    Operator = ' ',
-    TypeParameter = ' '
-  },
-  lsp = {
-    auto_attach = false,
-    preference = nil,
-  },
-  highlight = false,
-  separator = " > ",
-  depth_limit = 0,
-  depth_limit_indicator = "..",
-  safe_output = true,
-  click = false
-}
 
 
 local on_attach = function(client, bufnr)
-  navic.attach(client, bufnr)
   map('n', '<leader>rn', vim.lsp.buf.rename, opts)
   map('n', '<leader>ca', vim.lsp.buf.code_action, opts)
 
@@ -57,6 +15,7 @@ local on_attach = function(client, bufnr)
   map('n', 'gr', require('telescope.builtin').lsp_references, opts)
   map('n', 'K', vim.lsp.buf.hover, opts)
   map('n', '<leader>F', vim.lsp.buf.format, opts)
+  map('n', '<leader>t', vim.diagnostic.open_float, opts)
 end
 
 local cmp = require 'cmp'
@@ -220,9 +179,9 @@ require("lspconfig").svelte.setup {
 }
 
 local signs = {
-  Error = " ",
-  Warn = " ",
-  Hint = " ",
+  Error = " ",
+  Warn = " ",
+  Hint = " ",
   Info = " "
 }
 
