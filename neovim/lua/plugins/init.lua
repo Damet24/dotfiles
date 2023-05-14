@@ -4,7 +4,9 @@ require('packer').startup(function(use)
   -- theme
   use 'nvim-tree/nvim-web-devicons'
   use 'rebelot/kanagawa.nvim'
-  use ({ 'projekt0n/github-nvim-theme', tag = 'v0.0.7' })
+  use({ 'projekt0n/github-nvim-theme', tag = 'v0.0.7' })
+  use({ 'rose-pine/neovim', as = 'rose-pine' })
+  use { "ellisonleao/gruvbox.nvim" }
 
   use 'nvim-lua/plenary.nvim'
   -- tree sitter

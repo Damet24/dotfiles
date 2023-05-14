@@ -178,6 +178,16 @@ require("lspconfig").svelte.setup {
   capabilities = capabilities
 }
 
+require("lspconfig").yamlls.setup {
+  on_attach = on_attach,
+  capabilities = capabilities
+}
+
+require("lspconfig").html.setup {
+  on_attach = on_attach,
+  capabilities = capabilities
+}
+
 local signs = {
   Error = " ",
   Warn = " ",
